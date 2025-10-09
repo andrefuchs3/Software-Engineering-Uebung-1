@@ -39,4 +39,7 @@ unter Leitung durch Prof. Dr. Karsten Becker, TH Deggendorf
 
 ```
 git clone https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung
+git checkout v1     # Wechsel zu lauffähiger Version nach Sprint 1 (Ausführen in src/Program)
+git checkout v2     # Wechsel zu lauffähiger Version nach Sprint 2 (Ausführen in src/Program)
+git checkout v3     # Wechsel zu lauffähiger Version nach Sprint 3 (Ausführen in src/Program)
 ``` 
