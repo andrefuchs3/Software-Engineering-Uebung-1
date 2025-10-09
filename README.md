@@ -1,2 +1,3 @@
-# Software-Engineering-Uebung-1
-Übung 1 – Software Engineering (WS 2025/26), Prof. Dr. Karsten Becker, TH Deggendorf
+# Software-Engineering-Inuduktionskochfeld-Kochfeldsteuerung
+Software Engineering (WS 2025/26)
+von Andre Fuchs unter Leitung durch Prof. Dr. Karsten Becker, TH Deggendorf
