@@ -37,5 +37,6 @@ unter Leitung durch Prof. Dr. Karsten Becker, TH Deggendorf
 
 # Projekt zum Laufen bringen:
 
-``` git clone https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung
+```
+git clone https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung
 ``` 
