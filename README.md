@@ -29,6 +29,8 @@ unter Leitung durch Prof. Dr. Karsten Becker, TH Deggendorf
 
 7. Kochfeld - Dunstabzugskombination
 
+8. Timer
+
 ## Gesamtdokumentation:
 
 [Gesamtdokumentation](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung)
