@@ -11,21 +11,23 @@ unter Leitung durch Prof. Dr. Karsten Becker, TH Deggendorf
 
 ## Tracking:
 
-[Platzhalter](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung)
+[Tracking](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung)
 
 ## Teilfunktionalitäten:
 
-1. Platzhalter
+1. Schnell-Erhitzung
 
-2. Platzhalter
+2. Kochzonen-/ Topferkennung
 
-3. Platzhalter
+3. Flex-/Kombizonen
 
-4. Platzhalter
+4. Temperaturregelung
 
-5. Platzhalter
+5. Überkoch-/ Überlaufschutz
 
-6. Platzhalter
+6. Kindersicherung/Sperrfunktion
+
+7. Kochfeld-Dunstabzugskombination
 
 ## Gesamtdokumentation:
 
