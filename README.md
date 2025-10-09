@@ -1,4 +1,4 @@
-# Software-Engineering-Induktionskochfeld-Kochfeldsteuerung
+# Induktionskochfeld-Kochfeldsteuerung
 Software Engineering Projekt (WS 2025/26)
 
 von Andre Fuchs 
