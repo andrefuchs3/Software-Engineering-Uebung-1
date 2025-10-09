@@ -29,11 +29,11 @@ unter Leitung durch Prof. Dr. Karsten Becker, TH Deggendorf
 
 ## Gesamtdokumentation:
 
-[Platzhalter](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung)
+[Gesamtdokumentation](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung)
 
 ## Benutzerhandbuch:
 
-[Platzhalter](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung)
+[Benutzerhandbuch](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung)
 
 # Projekt zum Laufen bringen:
 
