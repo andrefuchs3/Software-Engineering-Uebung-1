@@ -19,7 +19,7 @@ unter Leitung durch Prof. Dr. Karsten Becker, TH Deggendorf
    
 2. Leistungsstufeneinstellung
 
-3. Benutzer-Feedback über Display oder LED-Anzeigen
+3. Benutzer-Feedback über ein Display
 
 4. Timer- und Abschaltlogik
 
