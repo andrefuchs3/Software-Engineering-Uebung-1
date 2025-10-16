@@ -15,21 +15,15 @@ unter Leitung durch Prof. Dr. Karsten Becker, TH Deggendorf
 
 ## Teilfunktionalitäten:
 
-1. Schnell - Erhitzung
+1. Kochzonenaktivierung und -auswahl
+   
+2. Leistungsstufeneinstellung
 
-2. Kochzonen-/ Topferkennung
+3. Benutzer-Feedback über LED-Anzeigen
 
-3. Flex-/ Kombizonen
+4. Timer- und Abschaltlogik
 
-4. Temperaturregelung
-
-5. Überkoch-/ Überlaufschutz
-
-6. Kindersicherung/ Sperrfunktion
-
-7. Kochfeld - Dunstabzugskombination
-
-8. Timer
+5. Sicherheits- und Sperrfunktionen
 
 ## Gesamtdokumentation:
 
