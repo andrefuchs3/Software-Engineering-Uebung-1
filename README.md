@@ -9,7 +9,7 @@ unter Leitung durch Prof. Dr. Karsten Becker, TH Deggendorf
 
 [Github Repository](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung)
 
-## Teilfunktionalitäten:
+### Teilfunktionalitäten:
 
 1. Kochzonenaktivierung und -auswahl
    
@@ -21,7 +21,7 @@ unter Leitung durch Prof. Dr. Karsten Becker, TH Deggendorf
 
 5. Sicherheits- und Sperrfunktionen
 
-## Documents:
+### Documents:
 [Teilfunktionalitäten & Requirements](https://docs.google.com/document/d/1fcB6lD7UYdoFPmOvb0pDuFdhhsP66SvboaUPQ7lgKc8/edit?usp=sharing)
 
 [Traceability Matrix](https://docs.google.com/spreadsheets/d/1D1JOeRtp_v65UR6-8XR4Qe0IuIOz1JcNGKBrt2488po/edit?usp=sharing)
