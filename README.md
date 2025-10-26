@@ -27,6 +27,6 @@ unter Leitung durch Prof. Dr. Karsten Becker, TH Deggendorf
 
 ## Gesamtdokumentation:
 
-[Dokumentation - Architektur, Schnittstellen, Traceability]([https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung](https://docs.google.com/document/d/1BBX9oYgXDuBI6Z1qmw-0XM_waEn3dmDBT-EJVYNez3g/edit?tab=t.0))
+[Dokumentation - Architektur, Schnittstellen, Traceability](https://docs.google.com/document/d/1BBX9oYgXDuBI6Z1qmw-0XM_waEn3dmDBT-EJVYNez3g/edit?tab=t.0)
 
 
