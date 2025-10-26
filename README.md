@@ -21,10 +21,13 @@ unter Leitung durch Prof. Dr. Karsten Becker, TH Deggendorf
 
 5. Sicherheits- und Sperrfunktionen
 
-## Gesamtdokumentation:
+## Documents:
+[Teilfunktionalitäten & Requirements](https://docs.google.com/document/d/1fcB6lD7UYdoFPmOvb0pDuFdhhsP66SvboaUPQ7lgKc8/edit?tab=t.0)
+
+[Traceability Matrix](https://docs.google.com/spreadsheets/d/1D1JOeRtp_v65UR6-8XR4Qe0IuIOz1JcNGKBrt2488po/edit?gid=0#gid=0)
+
+[
+
+### Dokumentationen:
 
 [Dokumentation - Architektur, Schnittstellen, Traceability](https://docs.google.com/document/d/1BBX9oYgXDuBI6Z1qmw-0XM_waEn3dmDBT-EJVYNez3g/edit?tab=t.0)
-
-### Documents:
-[Teilfunktionalitäten & Requirements](https://docs.google.com/document/d/1fcB6lD7UYdoFPmOvb0pDuFdhhsP66SvboaUPQ7lgKc8/edit?tab=t.0)
-[Traceability Matrix](https://docs.google.com/spreadsheets/d/1D1JOeRtp_v65UR6-8XR4Qe0IuIOz1JcNGKBrt2488po/edit?gid=0#gid=0)
