@@ -27,17 +27,6 @@ unter Leitung durch Prof. Dr. Karsten Becker, TH Deggendorf
 
 ## Gesamtdokumentation:
 
-[Gesamtdokumentation](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung)
+[Dokumentation - Architektur, Schnittstellen, Traceability]([https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung](https://docs.google.com/document/d/1BBX9oYgXDuBI6Z1qmw-0XM_waEn3dmDBT-EJVYNez3g/edit?tab=t.0))
 
-## Benutzerhandbuch:
 
-[Benutzerhandbuch](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung)
-
-# Projekt zum Laufen bringen:
-
-```
-git clone https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung
-git checkout v1     # Wechsel zu lauffähiger Version nach Sprint 1 (Ausführen in src/Program)
-git checkout v2     # Wechsel zu lauffähiger Version nach Sprint 2 (Ausführen in src/Program)
-git checkout v3     # Wechsel zu lauffähiger Version nach Sprint 3 (Ausführen in src/Program)
-``` 
