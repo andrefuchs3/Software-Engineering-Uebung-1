@@ -9,10 +9,6 @@ unter Leitung durch Prof. Dr. Karsten Becker, TH Deggendorf
 
 [Github Repository](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung)
 
-## Tracking:
-
-[Tracking](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung)
-
 ## Teilfunktionalitäten:
 
 1. Kochzonenaktivierung und -auswahl
