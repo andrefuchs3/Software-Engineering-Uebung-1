@@ -6,4 +6,4 @@ Vorlage und Struktur basieren auf dem bereitgestellten Musterbeispiel.
 
 **Name:** Andre Fuchs
 **Matrikelnummer:** 22108306
-**Datum:** 09.10.2025
+**Datum:** 
