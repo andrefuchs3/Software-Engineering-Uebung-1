@@ -17,7 +17,8 @@ Folgende Requirements sind Bestandteil von Sprint 1:
 - F-13: Kindersicherung sperrt Eingaben  
 - NF-01: Reaktionszeit ≤ 200 ms  
 
-Diese Requirements sind in der Traceability-Matrix markiert.
+Diese Requirements sind in der [Traceability-Matrix](https://docs.google.com/spreadsheets/d/1D1JOeRtp_v65UR6-8XR4Qe0IuIOz1JcNGKBrt2488po/edit?usp=sharing)
+ markiert.
 
 ---
 
