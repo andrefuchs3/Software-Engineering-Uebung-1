@@ -28,6 +28,6 @@ unter Leitung durch Prof. Dr. Karsten Becker, TH Deggendorf
 
 [Architektur & Schnittstellen](https://docs.google.com/document/d/1PQW-ZK98nYdIIIZ21cZv-FEuan23-nfitycxM-afnTc/edit?usp=sharing)
 
-### Dokumentationen:
+### Gesamtdokumentation:
 
-[Dokumentation - Architektur, Schnittstellen, Traceability](https://docs.google.com/document/d/1BBX9oYgXDuBI6Z1qmw-0XM_waEn3dmDBT-EJVYNez3g/edit?usp=sharing)
+[Gesamtdokumentation](https://docs.google.com/document/d/1BBX9oYgXDuBI6Z1qmw-0XM_waEn3dmDBT-EJVYNez3g/edit?usp=sharing)
