@@ -42,7 +42,7 @@
 | F5.2 | Das System muss Fehlbedienungen erkennen und durch eine visuelle Warnung anzeigen. |
 
 
----
+
 
 
 ### 2. Nicht-funktionale Requirements
@@ -58,3 +58,4 @@
 | NF7 | Robustheit | Die Touchoberfläche muss mindestens 100 000 Betätigungen ohne Funktionsverlust standhalten. |
 
 
+---
