@@ -58,5 +58,5 @@ Aus der bisherigen Analyse wurden funktionale und nicht-funktionale Anforderunge
 Diese beschreiben sowohl das Verhalten des Systems als auch Qualitätsmerkmale wie Reaktionszeit, Zuverlässigkeit und Sicherheit.  
 Die vollständige Anforderungsliste mit Priorisierung und Zuordnung zu den Teilfunktionen ist im folgenden Dokument zu finden:
 
-[Requirements.md](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung/blob/main/docs/Requirements.md)
+[Requirements](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung/blob/main/docs/Requirements.md)
 
