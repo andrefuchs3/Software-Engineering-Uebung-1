@@ -57,18 +57,18 @@ Entwickler können die beschriebenen Systemkomponenten direkt als Klassen oder M
                                    |
                      Statusdaten / Steuerbefehle
                                    v
-      +------------------------------------------------+
+      +-------------------------------------------------+
       |             Hardware-Schnittstelle              |
       | (Treiber & Kommunikation zu physischen Modulen) |
-      |  - Heizelemente (Aktoren)                      |
+      |  - Heizelemente (Aktoren)                       |
       |  - Sensoren (Temperatur, Strom, Topferkennung)  |
-      |  - Buzzer / Anzeigeelemente                    |
-      +------------------------------------------------+
+      |  - Buzzer / Anzeigeelemente                     |
+      +-------------------------------------------------+
 
       ┌────────────────────────────────────────────────────┐
-      │ Querschnittsfunktionen: Sicherheit & Energie        │
-      │ (Kindersicherung, Fehlbedienungsschutz,             │
-      │  Standby-Steuerung, Leistungsbegrenzung ≤ 1 W)      │
+      │ Querschnittsfunktionen: Sicherheit & Energie       │
+      │ (Kindersicherung, Fehlbedienungsschutz,            │
+      │  Standby-Steuerung, Leistungsbegrenzung ≤ 1 W)     │
       └────────────────────────────────────────────────────┘
 
 
