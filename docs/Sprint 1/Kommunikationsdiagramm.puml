@@ -1,1 +1,14 @@
+@startuml
+object HmiInput
+object CooktopController
+object SafetyManager
+object PowerControl
+object HmiOutput
+
+HmiInput -> CooktopController : 1. increasePower(zoneID)
+CooktopController -> SafetyManager : 2. isLocked()
+CooktopController -> PowerControl : 3. increaseLevel(zoneID)
+PowerControl -> CooktopController : 3.1 neueStufe
+CooktopController -> HmiOutput : 4. showPowerLevel(zoneID, neueStufe)
+@enduml
 
