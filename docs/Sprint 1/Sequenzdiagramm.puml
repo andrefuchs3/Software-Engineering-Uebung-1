@@ -1,1 +1,17 @@
+@startuml
+actor Benutzer
+participant HmiInput
+participant CooktopController
+participant SafetyManager
+participant PowerControl
+participant HmiOutput
+
+Benutzer -> HmiInput : Tippt "+"
+HmiInput -> CooktopController : increasePower(zoneID)
+CooktopController -> SafetyManager : isLocked()
+SafetyManager --> CooktopController : false
+CooktopController -> PowerControl : increaseLevel(zoneID)
+PowerControl --> CooktopController : neueStufe
+CooktopController -> HmiOutput : showPowerLevel(zoneID, neueStufe)
+@enduml
 
