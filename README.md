@@ -30,4 +30,4 @@ unter Leitung durch Prof. Dr. Karsten Becker, TH Deggendorf
 
 ### Gesamtdokumentation:
 
-[Gesamtdokumentation](https://docs.google.com/document/d/1BBX9oYgXDuBI6Z1qmw-0XM_waEn3dmDBT-EJVYNez3g/edit?usp=sharing)
+[Gesamtdokumentation](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung/blob/main/docs/Gesamtdokumentation.md)
