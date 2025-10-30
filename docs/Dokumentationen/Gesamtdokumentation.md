@@ -57,7 +57,7 @@ Die Architektur folgt einem **schichtenbasierten Modell**, bestehend aus:
 Darüber hinaus wurden die Kommunikationsschnittstellen zwischen den Modulen definiert und alle Anforderungen über eine Traceability-Matrix mit Komponenten und Testfällen verknüpft.
 
 📄 [Dokumentation – Architektur, Schnittstellen und Traceability](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung/blob/main/docs/Dokumentationen/Dokumentation_Architektur_Schnittstellen_Traceability.md)  
-📊 [Traceability-Matrix (Google Sheets)](https://docs.google.com/spreadsheets/d/1D1JOeRtp_v65UR6-8XR4Qe0IuIOz1JcNGKBrt2488po/edit?gid=0#gid=0)
+📊 [Traceability-Matrix (Google Sheets)](https://docs.google.com/spreadsheets/d/1D1JOeRtp_v65UR6-8XR4Qe0IuIOz1JcNGKBrt2488po/edit?usp=sharing)
 
 Die Architektur definiert bereits alle Hauptkomponenten des Systems, z. B.:
 
