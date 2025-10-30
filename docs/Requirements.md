@@ -1,21 +1,6 @@
 # Requirements – Kochfeldsteuerung
 
-## 1. Teilfunktionalitäten
-
-| Nr. | Teilfunktionalität | Beschreibung |
-|-----|--------------------|---------------|
-| 1 | Kochzonenaktivierung und -auswahl | Der Benutzer kann über die Toucheingabe eine oder mehrere Kochzonen aktivieren und deaktivieren. |
-| 2 | Leistungsstufeneinstellung | Die Heizleistung jeder aktiven Kochzone kann über Toucheingaben (Plus-/Minus-Tasten) eingestellt werden. |
-| 3 | Benutzer-Feedback über Display | Das Kochfeld zeigt aktive Kochzonen, Leistungsstufen, Timer und Restwärme über Anzeigen an. |
-| 4 | Timer- und Abschaltlogik | Für jede Kochzone kann eine jeweilige Zeit eingestellt werden; nach Ablauf erfolgt eine automatische Abschaltung. |
-| 5 | Sicherheits- und Sperrfunktionen | Das Kochfeld verfügt über eine Tastensperre und erkennt Fehlbedienungen zur Erhöhung der Sicherheit. |
-
-
----
-
-## 2. Requirements
-
-### 2.1 Funktionale Requirements
+### 1. Funktionale Requirements
 
 #### Kochzonenaktivierung und -auswahl
 
@@ -59,7 +44,7 @@
 
 ---
 
-### 2.2 Nicht-funktionale Requirements
+### 2. Nicht-funktionale Requirements
 
 | Req.-Nr. | Kategorie | Beschreibung |
 |-----------|------------|---------------|
@@ -73,27 +58,3 @@
 
 
 ---
-
-## 3. Passagen für das Pflichtenheft
-
-| Teilfunktion | Beschreibung |
-|---------------|--------------|
-| Kochzonenaktivierung und -auswahl | Das System implementiert eine Toucheingabe, über die einzelne Kochzonen aktiviert und deaktiviert werden können. Jede Aktivierung wird durch eine visuelle Anzeige bestätigt. |
-| Leistungsstufeneinstellung | Für jede aktivierte Kochzone werden neun Leistungsstufen zur Verfügung gestellt. Die Einstellung erfolgt über Toucheingaben (Plus-/Minus-Tasten). Die gewählte Leistungsstufe wird direkt übernommen und in der Anzeige aktualisiert. |
-| Benutzer-Feedback über Display | Das System stellt visuelles Feedback über den aktuellen Status jeder Kochzone bereit. Folgende Zustände werden angezeigt: aus, aktiv, Restwärme und Fehler. Leistungsstufen, Timer und Fehlermeldungen werden durch Symbole und Zahlen dargestellt. |
-| Timer- und Abschaltlogik | Für jede Kochzone ist ein separater Timer implementiert, der eine gewünschte Kochdauer ermöglicht. Nach Ablauf des Timers wird die entsprechende Kochzone automatisch deaktiviert. Der Benutzer kann die Timerwerte während des Betriebs ändern oder abbrechen. |
-| Sicherheits- und Sperrfunktionen | Das System enthält eine Kindersicherungsfunktion, die alle Eingaben sperrt, sobald sie aktiviert wird. Fehlbedienungen oder unerlaubte Eingaben werden erkannt und über eine Warnanzeige signalisiert. |
-
-
----
-
-## 4. Passagen für das Lastenheft
-
-| Teilfunktion | Beschreibung |
-|---------------|--------------|
-| Kochzonenaktivierung und -auswahl | Der Benutzer soll über die Toucheingabe einzelne Kochzonen aktivieren und deaktivieren können. Das System soll eindeutig anzeigen, welche Kochzonen aktuell in Betrieb sind. |
-| Leistungsstufeneinstellung | Für jede aktive Kochzone soll der Benutzer eine Leistungsstufe einstellen können. Die Bedienung soll über Toucheingaben (Plus-/Minus-Tasten) erfolgen. Die eingestellte Leistungsstufe soll sofort wirksam und auf der Anzeige sichtbar sein. |
-| Benutzer-Feedback über Display | Das Kochfeld soll über Anzeigen verfügen, die den aktuellen Zustand jeder Kochzone darstellen. Es sollen Zustände wie aktiv, aus, Restwärme oder Fehler erkennbar sein. Benutzerinformationen wie Timer oder Leistungsstufen sollen gut lesbar dargestellt werden. |
-| Timer- und Abschaltlogik | Der Benutzer soll für jede Kochzone eine Zeit einstellen können, nach deren Ablauf die Zone automatisch abgeschaltet wird. Der Timer soll während des Betriebs veränderbar und manuell deaktivierbar sein. Nach Ablauf soll eine visuelle und akustische Rückmeldung erfolgen. |
-| Sicherheits- und Sperrfunktionen | Das Kochfeld soll über eine Kindersicherung verfügen, die versehentliche oder unbefugte Bedienung verhindert. Fehlbedienungen sollen erkannt und dem Benutzer über eine Warnanzeige mitgeteilt werden. |
-
