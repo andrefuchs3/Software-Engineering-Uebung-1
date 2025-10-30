@@ -1,1 +1,50 @@
+@startuml
+class HmiInput {
+    +selectZone(zoneID)
+    +increasePower(zoneID)
+    +decreasePower(zoneID)
+    +toggleChildLock()
+}
+
+class CooktopController {
+    -childLockActive : bool
+    +activateZone(zoneID)
+    +deactivateZone(zoneID)
+    +setPowerLevel(zoneID, level)
+    +updateDisplay()
+}
+
+class SafetyManager {
+    -childLock : bool
+    +isLocked() : bool
+    +lockInput()
+    +unlockInput()
+}
+
+class PowerControl {
+    -powerLevel : Map<zoneID,int>
+    +increaseLevel(zoneID)
+    +decreaseLevel(zoneID)
+    +getLevel(zoneID) : int
+}
+
+class ZoneManager {
+    -zones : List<Zone>
+    +setActive(zoneID, active)
+    +isActive(zoneID) : bool
+}
+
+class HmiOutput {
+    +showActiveZone(zoneID)
+    +showPowerLevel(zoneID, level)
+    +showLock()
+}
+
+HmiInput --> CooktopController
+CooktopController --> SafetyManager
+CooktopController --> PowerControl
+CooktopController --> ZoneManager
+CooktopController --> HmiOutput
+PowerControl --> ZoneManager
+@enduml
 
