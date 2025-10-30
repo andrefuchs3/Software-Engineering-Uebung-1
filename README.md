@@ -21,13 +21,6 @@ unter Leitung durch Prof. Dr. Karsten Becker, TH Deggendorf
 
 5. Sicherheits- und Sperrfunktionen
 
-### Documents:
-[Teilfunktionalitäten & Requirements](https://docs.google.com/document/d/1fcB6lD7UYdoFPmOvb0pDuFdhhsP66SvboaUPQ7lgKc8/edit?usp=sharing)
-
-[Traceability Matrix](https://docs.google.com/spreadsheets/d/1D1JOeRtp_v65UR6-8XR4Qe0IuIOz1JcNGKBrt2488po/edit?usp=sharing)
-
-[Architektur & Schnittstellen](https://docs.google.com/document/d/1PQW-ZK98nYdIIIZ21cZv-FEuan23-nfitycxM-afnTc/edit?usp=sharing)
-
 ### Gesamtdokumentation:
 
 [Gesamtdokumentation](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung/blob/main/docs/Gesamtdokumentation.md)
