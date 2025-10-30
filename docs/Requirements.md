@@ -44,6 +44,7 @@
 
 ---
 
+
 ### 2. Nicht-funktionale Requirements
 
 | Req.-Nr. | Kategorie | Beschreibung |
@@ -57,4 +58,3 @@
 | NF7 | Robustheit | Die Touchoberfläche muss mindestens 100 000 Betätigungen ohne Funktionsverlust standhalten. |
 
 
----
