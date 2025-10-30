@@ -76,3 +76,18 @@ Die Architektur definiert bereits alle Hauptkomponenten des Systems, z. B.:
 Diese Komponenten bilden die Grundlage für die objektorientierte Modellierung im weiteren Verlauf.
 
 ---
+
+## 4. Objektorientiertes Design
+Auf Basis der zuvor definierten Architektur wurde das System in **Software-Design-Komponenten** und **UML-Modelle** überführt.  
+Im ersten Sprint wurde die **Basisfunktionalität** modelliert, die folgende Requirements abdeckt:
+
+- F-01 – Kochzonenaktivierung über Touch  
+- F-02 – Anzeige aktiver Kochzonen  
+- F-03 – Leistungsstufeneinstellung  
+- F-04 – Leistungsänderung über Plus/Minus  
+- F-07 – Leistungsanzeige  
+- F-13 – Kindersicherung  
+- NF-01 – Reaktionszeit ≤ 200 ms  
+
+Diese Anforderungen bilden den Kern der Steuerungslogik und stellen eine lauffähige Grundversion des Systems dar.
+
