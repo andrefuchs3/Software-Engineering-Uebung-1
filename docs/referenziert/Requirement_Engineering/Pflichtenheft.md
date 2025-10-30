@@ -1,9 +1,9 @@
 # Pflichtenheft: Kochfeldsteuerung für Induktionskochfeld
 
 1. Das System ermöglicht eine einfache und klare Bedienung.  
-   • Das System erkennt Touch-Eingaben zuverlässig und reagiert ohne spürbare Verzögerung.  
+   • Das System erkennt Touch-Eingaben zuverlässig und reagiert innerhalb 200ms.  
    • Kochzonen können einzeln aktiviert oder deaktiviert werden.  
-   • Der aktuelle Zustand jeder Kochzone (aktiv/inaktiv) wird unmittelbar angezeigt.  
+   • Der aktuelle Zustand jeder Kochzone (aktiv/inaktiv) wird binnen 200ms angezeigt.  
    • Die Bedienoberfläche bleibt übersichtlich und reagiert stabil, auch bei mehreren gleichzeitigen Eingaben.
 
 2. Die Leistungsstufeneinstellung ist präzise umgesetzt.  
