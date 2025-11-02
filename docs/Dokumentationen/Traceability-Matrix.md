@@ -3,7 +3,7 @@
 Diese Tabelle bildet die Nachverfolgbarkeit (Traceability) zwischen den Requirements,  
 den logischen Softwarekomponenten, den zugehörigen Software-Design-Komponenten, den Sprints und den Testfällen ab.
 
-| **Req-ID** | **Beschreibung** | **Zugehörige logische Komponenten** | **Zugehörige Software-Design-Komponenten (Sprint 1)** | **Sprint-Zuordnung** | **Testfälle** |
+| **Req-ID** | **Beschreibung** | **Zugehörige logische Komponenten** | **Zugehörige Software-Design-Komponenten** | **Sprint-Zuordnung** | **Testfälle** |
 |:-----------|:-----------------|:------------------------------------|:------------------------------------------------------|:--------------------|:--------------|
 | F-01 | Kochzonenaktivierung über Touch | Bedienoberfläche / Eingabesteuerung / Kochfeldlogik | hmiInput, cooktopController, zoneManager | Sprint 1 | – |
 | F-02 | Anzeige aktiver Kochzonen | Anzeigeeinheit / Kochfeldlogik | cooktopController, hmiOutput, zoneManager | Sprint 1 | – |
