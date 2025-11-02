@@ -9,9 +9,9 @@ unter Leitung durch Prof. Dr. Karsten Becker, TH Deggendorf
 
 [Github Repository](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung)
 
-### Traceability-Matrix (Google-Sheets):
+### Traceability-Matrix:
 
-[Traceability-Matrix](https://docs.google.com/spreadsheets/d/1D1JOeRtp_v65UR6-8XR4Qe0IuIOz1JcNGKBrt2488po/edit?usp=sharing)
+[Traceability-Matrix](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung/blob/main/docs/Dokumentationen/Traceability-Matrix.md)
 
 ### Teilfunktionalitäten:
 
