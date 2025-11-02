@@ -29,7 +29,4 @@ den logischen Softwarekomponenten, den zugehörigen Software-Design-Komponenten,
 
 ---
 
-**Hinweis:**  
-- Die Spalte **„Software-Design-Komponenten“** erweitert die Traceability um die Modelle aus Sprint 1 (Klassendiagramm / Sequenzdiagramm).  
-- Anforderungen mit *Sprint 1* sind im aktuellen Stand umgesetzt.  
-- Weitere Sprints (z. B. Timer- und Energieverwaltung) ergänzen diese Tabelle um neue Design-Komponenten wie `timerManager` oder `energyManager`.
+
