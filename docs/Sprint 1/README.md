@@ -37,6 +37,8 @@ Diese Requirements sind in der [Traceability-Matrix](https://github.com/andrefuc
 ### Klassendiagramm
 ![Klassendiagramm](./UML-Diagramme/Klassendiagramm.png)
 
+![Klassendiagramm_v2](./UML-Diagramme/Klassendiagramm_v2.png)
+
 ### Sequenzdiagramm  
 Use Case: *Leistungsstufe erhöhen*  
 ![Sequenzdiagramm](./UML-Diagramme/Sequenzdiagramm.png)
