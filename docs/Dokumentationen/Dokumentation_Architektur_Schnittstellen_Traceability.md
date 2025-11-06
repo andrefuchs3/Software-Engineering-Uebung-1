@@ -120,7 +120,7 @@ Sie dient Entwicklern als Referenz, um bestehende Verbindungen zu verstehen und 
 
 ## Traceability
 
-Die [Traceability-Matrix](https://docs.google.com/spreadsheets/d/1D1JOeRtp_v65UR6-8XR4Qe0IuIOz1JcNGKBrt2488po/edit?gid=0#gid=0)
+Die [Traceability-Matrix](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung/blob/main/docs/Dokumentationen/Traceability-Matrix.md)
  verknüpft die funktionalen und nicht-funktionalen Anforderungen mit den Systemkomponenten und den zugehörigen Testfällen.  
 Sie stellt sicher, dass jede Anforderung umgesetzt und überprüft werden kann und keine Funktionalität unbeachtet bleibt.
 
