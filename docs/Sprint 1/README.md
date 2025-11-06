@@ -39,7 +39,7 @@ Diese Requirements sind in der [Traceability-Matrix](https://github.com/andrefuc
 
 Das Klassendiagramm wurde angepasst, um das **Singleton-Pattern** zu verdeutlichen.
 Der **SafetyManager** ist nun als Singleton gekennzeichnet, und der CooktopController greift über die statische Methode **getInstance()** darauf zu.
-Dadurch bleibt die Kindersicherung systemweit konsistent, ohne die Architektur zu verändern.
+Dadurch bleibt die Kindersicherung systemweit konsistent, ohne die Architektur zu verändern:
 
 ![Klassendiagramm_v2](./UML-Diagramme/Klassendiagramm_v2.png)
 
