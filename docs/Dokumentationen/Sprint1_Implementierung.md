@@ -13,6 +13,7 @@ Für die Implementierung von Sprint 1 wurde eine einfache, klar strukturierte Ja
 Die Projektstruktur folgt der zuvor definierten Modul- und Paketstruktur:
 
 /src/main/java
+
 ├─ core
 
 │ ├─ CooktopController.java
