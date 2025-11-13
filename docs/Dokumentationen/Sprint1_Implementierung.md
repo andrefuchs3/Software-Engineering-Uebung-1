@@ -12,7 +12,7 @@ Für die Implementierung von Sprint 1 wurde eine einfache, klar strukturierte Ja
 
 Die Projektstruktur folgt der zuvor definierten Modulstruktur:
 
-/src/main/java
+src/
 
 ├─ core
 
