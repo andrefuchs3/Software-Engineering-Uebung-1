@@ -46,8 +46,7 @@ App.java
 
 Die implementierte Funktionalität basiert vollständig auf den in Sprint 1 markierten Anforderungen der Traceability-Matrix:
 
-➡️ **Traceability-Matrix:**  
-[Traceability-Matrix.md](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung/blob/main/docs/Dokumentationen/Traceability-Matrix.md)
+[**Traceability-Matrix**](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung/blob/main/docs/Dokumentationen/Traceability-Matrix.md)
 
 ### In Sprint 1 umgesetzte Requirements
 
