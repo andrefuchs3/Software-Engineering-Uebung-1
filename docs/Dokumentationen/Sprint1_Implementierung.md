@@ -14,17 +14,29 @@ Die Projektstruktur folgt der zuvor definierten Modul- und Paketstruktur:
 
 /src/main/java
 ├─ core
+
 │ ├─ CooktopController.java
+
 │ └─ ZoneManager.java
+
 ├─ power
+
 │ └─ PowerControl.java
+
 ├─ safety
+
 │ └─ SafetyManager.java
+
 ├─ hmi
+
 │ ├─ HmiInput.java
+
 │ └─ HmiOutput.java
+
 └─ util
+
 └─ Types.java
+
 App.java
 
 
