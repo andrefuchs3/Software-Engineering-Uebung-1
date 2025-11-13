@@ -40,9 +40,6 @@ Die Projektstruktur folgt der zuvor definierten Modulstruktur:
 
 App.java
 
-
-Damit entspricht die Implementierung exakt der Architektur aus Sprint 1.
-
 ---
 
 ## 2. Traceability-Matrix
@@ -80,8 +77,6 @@ Die Implementierung folgt exakt der zuvor definierten Systemstruktur:
 - **Sicherheitssystem (safety/SafetyManager):** Singleton für zentrale Kindersicherung  
 - **Ausgabe (hmi/HmiOutput):** zeigt Systemzustände über Konsole an  
 - **Typdefinitionen (util/Types):** enthält Enum `ZoneID` für typsichere Zonenbezeichner  
-
-Damit ist die Architektur aus Sprint 1 zu 100 % umgesetzt.
 
 ---
 
