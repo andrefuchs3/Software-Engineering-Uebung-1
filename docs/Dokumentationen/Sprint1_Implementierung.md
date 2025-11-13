@@ -10,7 +10,7 @@ Für die Implementierung von Sprint 1 wurde eine einfache, klar strukturierte Ja
 - **Extensions:** Java Extension Pack  
 - **Kompilierung & Ausführung:** über die integrierte Java-Unterstützung in VS Code
 
-Die Projektstruktur folgt der zuvor definierten Modul- und Paketstruktur:
+Die Projektstruktur folgt der zuvor definierten Modulstruktur:
 
 /src/main/java
 
@@ -45,7 +45,7 @@ Damit entspricht die Implementierung exakt der Architektur aus Sprint 1.
 
 ---
 
-## 2. Bezug zur Traceability-Matrix
+## 2. Traceability-Matrix
 
 Die implementierte Funktionalität basiert vollständig auf den in Sprint 1 markierten Anforderungen der Traceability-Matrix:
 
