@@ -29,4 +29,3 @@ den logischen Softwarekomponenten, den zugehörigen Software-Design-Komponenten,
 
 F=Funktional; NF=Nicht-Funktional
 
----
