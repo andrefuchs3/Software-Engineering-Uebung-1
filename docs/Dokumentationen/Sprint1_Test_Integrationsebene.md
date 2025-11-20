@@ -1,4 +1,4 @@
-## Integrationstests
+## Testfälle - Integrationsebene
 
 
 ### **IT-01 – HmiInput ↔ CooktopController (Zone aktivieren)**
