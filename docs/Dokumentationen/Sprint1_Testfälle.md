@@ -1,6 +1,5 @@
 ## Modultests (Unit Tests auf Modulebene)
 
----
 
 ### **MT-01 – Modul: power (PowerControl)**
 **Zweck:** Algorithmische Korrektheit der Leistungsstufen-Logik  
