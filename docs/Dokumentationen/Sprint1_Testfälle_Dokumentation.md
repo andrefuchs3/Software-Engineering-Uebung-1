@@ -28,7 +28,7 @@ Ziel ist die Überprüfung:
 Die definierten Testfälle decken die wichtigsten Basismodule ab:  
 `PowerControl`, `SafetyManager` und das Enum `ZoneID`.
 
-**Vollständige Testfälle:**  
+**Vollständige Modultests:**  
  `docs/Dokumentationen/Sprint1_Test_Modulebene.md`
 
 | Test-ID | Modul                        | Zweck                                       |
