@@ -76,7 +76,7 @@ Alle Testfälle aus Sprint 1 sind direkt mit den Anforderungen verknüpft, die i
 | F-03/F-04  | Leistungsstufen erhöhen/verringern     | MT-01, IT-02          |
 | F-07       | Leistungsstufe anzeigen                | IT-02                 |
 | F-13       | Kindersicherung                        | MT-02, IT-03          |
-| NF-01      | Reaktionszeit ≤ 200 ms                 | Architekturbedingt erfüllt (synchrone Aufrufe) |
+
 
 Die vollständige Nachverfolgbarkeit ist dokumentiert unter:
 
