@@ -4,7 +4,7 @@
 ### **IT-01 – HmiInput ↔ CooktopController (Zone aktivieren)**
 **Ziel:** Prüfen, ob der Aufruf von `HmiInput` korrekt an den `CooktopController` weitergegeben wird.
 
-| Punkt | Beschreibung |
+|  | Beschreibung |
 |-------|--------------|
 | **Komponenten** | HmiInput, CooktopController |
 | **Vorbedingung** | Ein `CooktopController` ist erstellt und an ein `HmiInput`-Objekt übergeben. Die Zone `FRONT_LEFT` ist zu Beginn inaktiv. |
@@ -18,7 +18,7 @@
 ### **IT-02 – CooktopController ↔ PowerControl (Leistungsstufe erhöhen)**
 **Ziel:** Prüfen, ob der Controller die Leistung korrekt über `PowerControl` ändert.
 
-| Punkt | Beschreibung |
+|  | Beschreibung |
 |-------|--------------|
 | **Komponenten** | CooktopController, PowerControl |
 | **Vorbedingung** | `CooktopController` ist instanziiert und besitzt ein internes `PowerControl`. Zone `FRONT_LEFT` ist aktiv, Leistungsstufe = 3. |
@@ -32,7 +32,7 @@
 ### **IT-03 – CooktopController ↔ SafetyManager (Kindersicherung blockiert Änderungen)**
 **Ziel:** Prüfen, ob der Controller die Kindersicherung über `SafetyManager` korrekt abfragt und Aktionen blockiert.
 
-| Punkt | Beschreibung |
+|  | Beschreibung |
 |-------|--------------|
 | **Komponenten** | CooktopController, SafetyManager |
 | **Vorbedingung** | `CooktopController` ist instanziiert. `SafetyManager.getInstance()` existiert. Zone `FRONT_LEFT` aktiv, Leistungsstufe = 5. Kindersicherung = aus. |
