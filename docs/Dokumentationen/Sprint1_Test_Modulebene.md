@@ -41,5 +41,3 @@
 | **Nachbedingung** | Enum unverändert und valide |
 | **Ergebnis** |  -  |
 
----
-
