@@ -1,4 +1,4 @@
-# Testdokumentation – Sprint 1
+# Dokumentation der Testfälle – Sprint 1
 
 ## 1. Zielsetzung der Testaktivitäten
 
