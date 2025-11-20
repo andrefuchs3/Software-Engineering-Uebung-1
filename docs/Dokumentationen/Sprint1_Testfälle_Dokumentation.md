@@ -66,7 +66,7 @@ Diese Tests stellen sicher, dass die Systemkomponenten korrekt interagieren und 
 
 Alle Testfälle aus Sprint 1 sind direkt mit den Anforderungen verknüpft, die in Sprint 1 definiert und umgesetzt wurden.
 
-**Anforderungsauszug gemäß** [Traceability-Matrix](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung/blob/main/docs/Dokumentationen/Traceability-Matrix.md):
+**Anforderungsauszug gemäß** [Traceability-Matrix](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung/blob/main/docs/Dokumentationen/Traceability-Matrix.md)
 
 | Requirement | Inhalt                               | Abgedeckt durch      |
 |------------|----------------------------------------|-----------------------|
