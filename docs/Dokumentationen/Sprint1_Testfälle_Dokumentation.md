@@ -1,4 +1,4 @@
-# 🧪 Testdokumentation – Sprint 1
+# Testdokumentation – Sprint 1
 
 ## 1. Zielsetzung der Testaktivitäten
 
@@ -31,7 +31,7 @@ Die definierten Testfälle decken die wichtigsten Basismodule ab:
 `PowerControl`, `SafetyManager` und das Enum `ZoneID`.
 
 **Vollständige Testfälle:**  
-📄 `docs/Dokumentationen/Sprint1_Test_Modulebene.md`
+ `docs/Dokumentationen/Sprint1_Test_Modulebene.md`
 
 | Test-ID | Modul                        | Zweck                                       |
 |--------:|------------------------------|---------------------------------------------|
@@ -82,6 +82,6 @@ Alle Testfälle aus Sprint 1 sind direkt mit den Anforderungen verknüpft, die i
 
 Die vollständige Nachverfolgbarkeit ist dokumentiert unter:
 
-📄 `docs/Dokumentationen/Traceability-Matrix.md`
+ `docs/Dokumentationen/Traceability-Matrix.md`
 
 
