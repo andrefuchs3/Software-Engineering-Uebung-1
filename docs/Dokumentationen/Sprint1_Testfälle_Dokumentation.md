@@ -23,12 +23,13 @@ Ziel ist die Überprüfung:
 
 - korrekter Algorithmen  
 - korrekter Datenverwaltung  
-- stabilen, erwartungskonformen Verhaltens ohne externe Abhängigkeiten  
+- stabilen, erwartungskonformen Verhaltens ohne externe Abhängigkeiten
+
+[📄 Testfälle – Modulebene](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung/blob/main/docs/Dokumentationen/Sprint1_Test_Modulebene.md)
 
 Die definierten Testfälle decken die wichtigsten Basismodule ab:  
 `PowerControl`, `SafetyManager` und das Enum `ZoneID`.
 
-[📄 Testfälle – Modulebene](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung/blob/main/docs/Dokumentationen/Sprint1_Test_Modulebene.md)
 
 | Test-ID | Modul                        | Zweck                                       |
 |--------:|------------------------------|---------------------------------------------|
@@ -65,7 +66,7 @@ Diese Tests stellen sicher, dass die Systemkomponenten korrekt interagieren und 
 
 Alle Testfälle aus Sprint 1 sind direkt mit den Anforderungen verknüpft, die in Sprint 1 definiert und umgesetzt wurden.
 
-**Anforderungsauszug gemäß Traceability-Matrix:**
+**Anforderungsauszug gemäß Traceability-Matrix:**[📄 Traceability-Matrix](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung/blob/main/docs/Dokumentationen/Traceability-Matrix.md)
 
 | Requirement | Inhalt                               | Abgedeckt durch      |
 |------------|----------------------------------------|-----------------------|
@@ -75,7 +76,5 @@ Alle Testfälle aus Sprint 1 sind direkt mit den Anforderungen verknüpft, die i
 | F-07       | Leistungsstufe anzeigen                | IT-02                 |
 | F-13       | Kindersicherung                        | MT-02, IT-03          |
 
-
-[📄 Traceability-Matrix](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung/blob/main/docs/Dokumentationen/Traceability-Matrix.md)
 
 
