@@ -4,7 +4,7 @@
 ### **MT-01 – Modul: power (PowerControl)**
 **Zweck:** Algorithmische Korrektheit der Leistungsstufen-Logik  
 
-| Punkt | Beschreibung |
+|  | Beschreibung |
 |-------|---------------|
 | **Modul** | power |
 | **Vorbedingung** | Modul *power* ist initialisierbar; `PowerControl` erstellt; Leistungsstufe von `FRONT_LEFT = 5` |
@@ -18,7 +18,7 @@
 ### **MT-02 – Modul: safety (SafetyManager)**
 **Zweck:** Korrektes Sperren/Entsperren im Singleton-Modul  
 
-| Punkt | Beschreibung |
+|  | Beschreibung |
 |-------|---------------|
 | **Modul** | safety |
 | **Vorbedingung** | `SafetyManager.getInstance()` existiert; Kindersicherung deaktiviert |
@@ -32,7 +32,7 @@
 ### **MT-03 – Modul: util (Types / Enums)**
 **Zweck:** Korrekte Auflistung und Existenz aller `ZoneID`-Werte  
 
-| Punkt | Beschreibung |
+|  | Beschreibung |
 |-------|---------------|
 | **Modul** | util |
 | **Vorbedingung** | `Types.ZoneID.values()` existieren |
