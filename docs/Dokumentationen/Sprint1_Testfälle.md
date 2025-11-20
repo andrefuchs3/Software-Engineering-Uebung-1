@@ -11,7 +11,7 @@
 | **Aktion** | `increaseLevel(ZoneID.FRONT_LEFT)` |
 | **Erwartete Reaktion** | Stufe steigt auf **6** |
 | **Nachbedingung** | `getLevel(FRONT_LEFT)` liefert **6** |
-| **Ergebnis** | * - * |
+| **Ergebnis** |  -  |
 
 ---
 
@@ -25,7 +25,7 @@
 | **Aktion** | `lockInput()` danach `isLocked()` |
 | **Erwartete Reaktion** | Rückgabe = **true** |
 | **Nachbedingung** | Sperre aktiv; später durch `unlockInput()` wieder deaktivierbar |
-| **Ergebnis** | * - * |
+| **Ergebnis** |  -  |
 
 ---
 
@@ -39,7 +39,7 @@
 | **Aktion** | Abfrage aller Enum-Werte |
 | **Erwartete Reaktion** | Werte: `FRONT_LEFT`, `FRONT_RIGHT`, `BACK_LEFT`, `BACK_RIGHT` |
 | **Nachbedingung** | Enum unverändert und valide |
-| **Ergebnis** | * - * |
+| **Ergebnis** |  -  |
 
 ---
 
