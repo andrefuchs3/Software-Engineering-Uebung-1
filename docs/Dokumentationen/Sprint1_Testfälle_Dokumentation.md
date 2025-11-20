@@ -11,10 +11,8 @@ Im Rahmen von **Sprint 1** wurden zentrale Funktionen der Kochfeldsteuerung impl
 
 Zur Sicherstellung der fachlichen und technischen Qualität wurden Testfälle auf zwei Ebenen definiert:
 
-- **Modulebene** – Prüfung der algorithmischen Korrektheit einzelner Komponenten  
-- **Integrationsebene** – Prüfung der Zusammenarbeit zweier Software-Design-Komponenten inklusive korrekter Aufrufsyntax  
-
-Diese Teststrategie ermöglicht eine zuverlässige Validierung sowohl der Einzelmodule als auch ihres Zusammenspiels im Gesamtsystem.
+- **Modulebene**: Prüfung der algorithmischen Korrektheit einzelner Komponenten  
+- **Integrationsebene**: Prüfung der Zusammenarbeit zweier Software-Design-Komponenten inklusive korrekter Aufrufsyntax  
 
 ---
 
@@ -53,7 +51,7 @@ Die **Integrationsebene** untersucht das Zusammenspiel zweier Komponenten und an
 - Einhaltung der Architekturvorgaben  
 
 **Vollständige Integrationstests:**  
-📄 `docs/Dokumentationen/Sprint1_Test_Integrationsebene.md`
+`docs/Dokumentationen/Sprint1_Test_Integrationsebene.md`
 
 | Test-ID | Komponenten                            | Zielsetzung                                              |
 |--------:|-----------------------------------------|----------------------------------------------------------|
