@@ -27,6 +27,6 @@ den logischen Softwarekomponenten, den zugehörigen Software-Design-Komponenten,
 | NF-06 | Normenkonformität (IEC 60335) | Gesamtsystem / Architektur | – | – | – | – | – |
 | NF-07 | Touchoberfläche ≥ 100 000 Betätigungen | Eingabefeld / Gehäusekomponente | – | – | – | – | – |
 
-F = Funktional, NF = Nicht-Funktional
+F = Funktional, NF = Nicht-Funktional, MT = Modul-Test, IT = Integrations-Test
 
 
