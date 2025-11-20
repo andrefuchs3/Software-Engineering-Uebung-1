@@ -29,7 +29,7 @@ Die definierten Testfälle decken die wichtigsten Basismodule ab:
 `PowerControl`, `SafetyManager` und das Enum `ZoneID`.
 
 **Vollständige Modultests:**  
- `docs/Dokumentationen/Sprint1_Test_Modulebene.md`
+[Testfälle – Modulebene](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung/blob/main/docs/Dokumentationen/Sprint1_Test_Modulebene.md)
 
 | Test-ID | Modul                        | Zweck                                       |
 |--------:|------------------------------|---------------------------------------------|
@@ -51,7 +51,7 @@ Die **Integrationsebene** untersucht das Zusammenspiel zweier Komponenten und an
 - Einhaltung der Architekturvorgaben  
 
 **Vollständige Integrationstests:**  
-`docs/Dokumentationen/Sprint1_Test_Integrationsebene.md`
+[Testfälle – Integrationsebene](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung/blob/main/docs/Dokumentationen/Sprint1_Test_Integrationsebene.md)
 
 | Test-ID | Komponenten                            | Zielsetzung                                              |
 |--------:|-----------------------------------------|----------------------------------------------------------|
@@ -80,6 +80,6 @@ Alle Testfälle aus Sprint 1 sind direkt mit den Anforderungen verknüpft, die i
 
 Die vollständige Nachverfolgbarkeit ist dokumentiert unter:
 
- `docs/Dokumentationen/Traceability-Matrix.md`
+[Traceability-Matrix](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung/blob/main/docs/Dokumentationen/Traceability-Matrix.md)
 
 
