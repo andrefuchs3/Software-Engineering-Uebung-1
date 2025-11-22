@@ -137,9 +137,7 @@ Alle definierten Testfälle auf Modulebene und Integrationsebene wurden einzeln 
 Die Testausführung erfolgte über die Datei Test_Sprint1.java, welche:
 
 - die notwendigen Systemzustände vorbereitet,
-
 - die definierten Aktionen der einzelnen Testfälle ausführt,
-
 - die Beobachtungen strukturiert in der Konsole ausgibt.
 
 Die erzeugten Konsolenausgaben wurden anschließend mit den erwarteten Reaktionen abgeglichen und dienten als Grundlage für die manuelle Bewertung der Testergebnisse.
