@@ -21,10 +21,10 @@
 |  | Beschreibung |
 |-------|--------------|
 | **Komponenten** | CooktopController, PowerControl |
-| **Vorbedingung** | `CooktopController` ist instanziiert und besitzt ein internes `PowerControl`. Zone `FRONT_LEFT` ist aktiv, Leistungsstufe = 3. |
+| **Vorbedingung** | `CooktopController` ist instanziiert und besitzt ein internes `PowerControl`. Zone `FRONT_LEFT` ist aktiv, Leistungsstufe = 0. |
 | **Aktion** | Aufruf von `cooktopController.increasePower(ZoneID.FRONT_LEFT)` |
-| **Erwartete Reaktion** | Der Controller ruft intern `powerControl.increaseLevel(ZoneID.FRONT_LEFT)` auf. Leistungsstufe steigt auf **4**. |
-| **Nachbedingung** | `powerControl.getLevel(ZoneID.FRONT_LEFT)` liefert **4** |
+| **Erwartete Reaktion** | Der Controller ruft intern `powerControl.increaseLevel(ZoneID.FRONT_LEFT)` auf. Leistungsstufe steigt auf **1**. |
+| **Nachbedingung** | `powerControl.getLevel(ZoneID.FRONT_LEFT)` liefert **1** |
 | **Ergebnis** | - |
 
 ---
@@ -35,9 +35,9 @@
 |  | Beschreibung |
 |-------|--------------|
 | **Komponenten** | CooktopController, SafetyManager |
-| **Vorbedingung** | `CooktopController` ist instanziiert. `SafetyManager.getInstance()` existiert. Zone `FRONT_LEFT` aktiv, Leistungsstufe = 5. Kindersicherung = aus. |
+| **Vorbedingung** | `CooktopController` ist instanziiert. `SafetyManager.getInstance()` existiert. Zone `FRONT_LEFT` aktiv, Leistungsstufe = 0. Kindersicherung = aus. |
 | **Aktion** | 1. `cooktopController.toggleChildLock()` → ruft `SafetyManager.lockInput()` auf. <br>2. Danach `cooktopController.increasePower(ZoneID.FRONT_LEFT)` |
 | **Erwartete Reaktion** | 1. `toggleChildLock()` aktiviert Sperre über `lockInput()`. <br>2. Beim Erhöhen prüft der Controller `isLocked()` und **bricht ab** – kein `increaseLevel()` mehr. |
-| **Nachbedingung** | `SafetyManager.isLocked()` ist **true**. Leistungsstufe bleibt **5**. |
+| **Nachbedingung** | `SafetyManager.isLocked()` ist **true**. Leistungsstufe bleibt **0**. |
 | **Ergebnis** | - |
 
