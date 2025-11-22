@@ -20,8 +20,8 @@ den logischen Softwarekomponenten, den zugehörigen Software-Design-Komponenten,
 | F-13 | Kindersicherung sperrt Eingaben | Sicherheitssystem / Bedienoberfläche | safetyManager, cooktopController, hmiInput | 1 | core, safety | MT-02, IT-03 | Bestanden |
 | F-14 | Fehlbedienungserkennung & Warnung | Sicherheitssystem / Anzeigeeinheit | safetyManager, hmiOutput | – | hmi, safety | – | – |
 | NF-01 | Reaktionszeit ≤ 200 ms | Eingabesteuerung / Leistungsregelung / Anzeigeeinheit | cooktopController, hmiOutput | 1 | core, hmi | – | – |
-| NF-02 | Keine ungewollte Aktivierung/Deaktivierung | Sicherheitssystem / Kochfeldlogik | safetyManager, cooktopController | 1 | core, safety | IT-03 | – |
-| NF-03 | Schutz gegen unbeabsichtigte Eingaben | Sicherheitssystem / Bedienoberfläche | safetyManager, hmiInput | 1 | hmi, safety | MT-02 | – |
+| NF-02 | Keine ungewollte Aktivierung/Deaktivierung | Sicherheitssystem / Kochfeldlogik | safetyManager, cooktopController | 1 | core, safety | IT-03 | Bestanden |
+| NF-03 | Schutz gegen unbeabsichtigte Eingaben | Sicherheitssystem / Bedienoberfläche | safetyManager, hmiInput | 1 | hmi, safety | MT-02 | Bestanden |
 | NF-04 | Anzeige aus 50 cm lesbar | Anzeigeeinheit | hmiOutput | – | hmi | – | – |
 | NF-05 | Standby-Verbrauch ≤ 1 W | Energieverwaltung | energyManager | – | – | – | – |
 | NF-06 | Normenkonformität (IEC 60335) | Gesamtsystem / Architektur | – | – | – | – | – |
