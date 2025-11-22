@@ -129,7 +129,7 @@ Alle Testfälle aus Sprint 1 sind direkt mit den Anforderungen verknüpft, die i
 | F-07       | Leistungsstufe anzeigen                | IT-02                 |
 | F-13       | Kindersicherung                        | MT-02, IT-03          |
 
-## 6. Durchgeführte Testläufe und Dokumentation der Ergebnisse
+## 5. Durchgeführte Testläufe und Dokumentation der Ergebnisse
 
 Zur Verifikation der in **Sprint 1** implementierten Funktionalitäten wurde ein vollständiger manueller Testdurchlauf durchgeführt.
 Alle definierten Testfälle auf **Modulebene** und **Integrationsebene** wurden einzeln ausgeführt und die Ergebnisse dokumentiert.
