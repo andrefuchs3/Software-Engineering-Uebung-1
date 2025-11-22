@@ -131,14 +131,14 @@ Alle Testfälle aus Sprint 1 sind direkt mit den Anforderungen verknüpft, die i
 
 ## 6. Durchgeführte Testläufe und Dokumentation der Ergebnisse
 
-Zur Verifikation der in Sprint 1 implementierten Funktionalitäten wurde ein vollständiger manueller Testdurchlauf durchgeführt.
-Alle definierten Testfälle auf Modulebene und Integrationsebene wurden einzeln ausgeführt und die Ergebnisse dokumentiert.
+Zur Verifikation der in **Sprint 1** implementierten Funktionalitäten wurde ein vollständiger manueller Testdurchlauf durchgeführt.
+Alle definierten Testfälle auf **Modulebene** und **Integrationsebene** wurden einzeln ausgeführt und die Ergebnisse dokumentiert.
 
 Die Testausführung erfolgte über die Datei Test_Sprint1.java, welche:
 
-- die notwendigen Systemzustände vorbereitet,
-- die definierten Aktionen der einzelnen Testfälle ausführt,
-- die Beobachtungen strukturiert in der Konsole ausgibt.
+- die notwendigen **Systemzustände vorbereitet**,
+- die definierten **Aktionen der einzelnen Testfälle ausführt**,
+- die **Beobachtungen strukturiert in der Konsole ausgibt**.
 
 Die erzeugten Konsolenausgaben wurden anschließend mit den erwarteten Reaktionen abgeglichen und dienten als Grundlage für die manuelle Bewertung der Testergebnisse.
 
