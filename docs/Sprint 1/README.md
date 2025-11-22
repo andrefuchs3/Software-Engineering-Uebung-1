@@ -51,7 +51,7 @@ Use Case: *Leistungsstufe erhöhen*
 Strukturierte Sicht auf denselben Use Case  
 ![Kommunikationsdiagramm](./UML-Diagramme/Kommunikationsdiagramm.png)
 
-# Dokumentation Testfälle – Sprint 1
+# Testfälle – Sprint 1
 
 ## 1. Zielsetzung der Testaktivitäten
 
