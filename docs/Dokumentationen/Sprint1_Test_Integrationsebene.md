@@ -11,7 +11,7 @@
 | **Aktion** | Aufruf von `hmiInput.selectZone(ZoneID.FRONT_LEFT, true)` |
 | **Erwartete Reaktion** | `HmiInput` ruft intern `cooktopController.setZoneActive(ZoneID.FRONT_LEFT, true)` auf. Die Zone wird im Controller aktiv gesetzt. |
 | **Nachbedingung** | `ZoneManager.isActive(ZoneID.FRONT_LEFT)` meldet **aktiv** |
-| **Ergebnis** | - |
+| **Ergebnis** | Bestanden - Ausgabe in Konsole bestätigt Aktivierung |
 
 ---
 
@@ -25,7 +25,7 @@
 | **Aktion** | Aufruf von `cooktopController.increasePower(ZoneID.FRONT_LEFT)` |
 | **Erwartete Reaktion** | Der Controller ruft intern `powerControl.increaseLevel(ZoneID.FRONT_LEFT)` auf. Leistungsstufe steigt auf **1**. |
 | **Nachbedingung** | `powerControl.getLevel(ZoneID.FRONT_LEFT)` liefert **1** |
-| **Ergebnis** | - |
+| **Ergebnis** | Bestanden - Anzeige zeigt korrekt "Leistungsstufe 1" |
 
 ---
 
@@ -39,5 +39,5 @@
 | **Aktion** | 1. `cooktopController.toggleChildLock()` → ruft `SafetyManager.lockInput()` auf. <br>2. Danach `cooktopController.increasePower(ZoneID.FRONT_LEFT)` |
 | **Erwartete Reaktion** | 1. `toggleChildLock()` aktiviert Sperre über `lockInput()`. <br>2. Beim Erhöhen prüft der Controller `isLocked()` und **bricht ab** – kein `increaseLevel()` mehr. |
 | **Nachbedingung** | `SafetyManager.isLocked()` ist **true**. Leistungsstufe bleibt **0**. |
-| **Ergebnis** | - |
+| **Ergebnis** | Bestanden - Konsole zeigt Blockierung + Fehlermeldung |
 
