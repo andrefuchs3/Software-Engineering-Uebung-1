@@ -134,7 +134,7 @@ Alle Testfälle aus Sprint 1 sind direkt mit den Anforderungen verknüpft, die i
 Zur Verifikation der in **Sprint 1** implementierten Funktionalitäten wurde ein vollständiger manueller Testdurchlauf durchgeführt.
 Alle definierten Testfälle auf **Modulebene** und **Integrationsebene** wurden einzeln ausgeführt und die Ergebnisse dokumentiert.
 
-Die Testausführung erfolgte über die Datei Test_Sprint1.java, welche:
+Die Testausführung erfolgte über die Datei [Test_Sprint1.java](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung/blob/main/src/Test_Sprint1.java), welche:
 
 - die notwendigen **Systemzustände vorbereitet**,
 - die definierten **Aktionen der einzelnen Testfälle ausführt**,
