@@ -22,6 +22,7 @@ Die Anforderungsanalyse und das Requirement Engineering bilden die Grundlage fü
 Hier wurden alle **funktionalen** und **nicht-funktionalen Requirements** spezifiziert, strukturiert und priorisiert.
 
 📄 [Requirement_Engineering.md](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung/blob/main/docs/Requirement_Engineering.md)  
+
 📄 [Requirements.md](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung/blob/main/docs/Requirements.md)
 
 Die Anforderungen umfassen u. a.:
@@ -57,6 +58,7 @@ Die Architektur folgt einem **schichtenbasierten Modell**, bestehend aus:
 Darüber hinaus wurden die Kommunikationsschnittstellen zwischen den Modulen definiert und alle Anforderungen über eine Traceability-Matrix mit Komponenten und Testfällen verknüpft.
 
 📄 [Dokumentation – Architektur, Schnittstellen und Traceability](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung/blob/main/docs/Architektur_Schnittstellen_Dokumentation.md)
+
 📊 [Traceability-Matrix](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung/blob/main/docs/Traceability-Matrix.md)
 
 Die Architektur definiert bereits alle Hauptkomponenten des Systems, z. B.:
