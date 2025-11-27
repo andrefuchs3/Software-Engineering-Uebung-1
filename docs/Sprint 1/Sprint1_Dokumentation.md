@@ -187,7 +187,7 @@ Diese Erkenntnisse dienen als Grundlage für Verbesserungen in Sprint 2 und dar�
 
 ---
 
-### 8.1 Positiv aufgefallene Punkte
+### 7.1 Positiv aufgefallene Punkte
 
 #### ✔ Klare Modul- und Schichtenstruktur
 Die zuvor definierte Schichtenarchitektur (HMI → Controller → Fachmodule) hat sich als sinnvoll erwiesen.  
@@ -207,7 +207,7 @@ Dies hat Fehlerquellen effektiv reduziert und die Architektur verbessert.
 
 ---
 
-### 8.2 Herausforderungen und Verbesserungspotenziale
+### 7.2 Herausforderungen und Verbesserungspotenziale
 
 #### ⚠ HMI-Ausgaben abhängig von Console-Output  
 Aktuell erfolgt die Validierung vieler Testfälle durch manuelle Sichtprüfung des Console-Outputs.  
@@ -233,7 +233,7 @@ Diese Erfahrung fließt nun in die zukünftige Vorgehensweise ein:
 
 ---
 
-### 8.3 Auswirkungen auf Sprint 2 und spätere Sprints
+### 7.3 Auswirkungen auf Sprint 2 und spätere Sprints
 
 - **Einführung automatisierter Tests** (JUnit)
 - **Erweiterung der Architektur um Timer und weitere Logik**
