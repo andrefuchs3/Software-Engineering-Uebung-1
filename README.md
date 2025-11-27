@@ -11,7 +11,7 @@ unter Leitung durch Prof. Dr. Karsten Becker, TH Deggendorf
 
 ### Traceability-Matrix:
 
-[Traceability-Matrix](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung/blob/main/docs/Dokumentationen/Traceability-Matrix.md)
+[Traceability-Matrix](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung/blob/main/docs/Traceability-Matrix.md)
 
 ### Teilfunktionalitäten:
 
@@ -27,4 +27,4 @@ unter Leitung durch Prof. Dr. Karsten Becker, TH Deggendorf
 
 ### Gesamtdokumentation:
 
-[Gesamtdokumentation](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung/blob/main/docs/Dokumentationen/Gesamtdokumentation.md)
+[Gesamtdokumentation](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung/blob/main/docs/Gesamtdokumentation.md)
