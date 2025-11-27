@@ -119,7 +119,7 @@ Diese Tests stellen sicher, dass die Systemkomponenten korrekt interagieren und 
 
 Alle Testfälle aus Sprint 1 sind direkt mit den Anforderungen verknüpft, die in Sprint 1 definiert und umgesetzt wurden.
 
-**Anforderungsauszug gemäß** [Traceability-Matrix](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung/blob/main/docs/Dokumentationen/Traceability-Matrix.md)
+**Anforderungsauszug gemäß** [Traceability-Matrix](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung/blob/main/docs/Traceability-Matrix.md)
 
 | Requirement | Inhalt                               | Abgedeckt durch      |
 |------------|----------------------------------------|-----------------------|
@@ -134,7 +134,7 @@ Alle Testfälle aus Sprint 1 sind direkt mit den Anforderungen verknüpft, die i
 Zur Verifikation der in **Sprint 1** implementierten Funktionalitäten wurde ein vollständiger manueller Testdurchlauf durchgeführt.
 Alle definierten Testfälle auf **Modulebene** und **Integrationsebene** wurden einzeln ausgeführt und die Ergebnisse dokumentiert.
 
-Die Testausführung erfolgte über die Datei [Test_Sprint1.java](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung/blob/main/src/Test_Sprint1.java), welche:
+Die Testausführung erfolgte über die Datei [Test_Sprint1.java](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung/blob/main/src/tests/Test_Sprint1.java), welche:
 
 - die notwendigen **Systemzustände vorbereitet**,
 - die definierten **Aktionen der einzelnen Testfälle ausführt**,
