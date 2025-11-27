@@ -140,6 +140,4 @@ Zeigt:
 ### 4.3 Kindersicherung (F-13)
 Die Sperre wirkt global, da `SafetyManager` als Singleton umgesetzt wurde.
 
----
-
 
