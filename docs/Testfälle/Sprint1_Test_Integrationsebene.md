@@ -1,5 +1,4 @@
-## Testfälle - Integrationsebene (Sprint 1)
-
+## Testfälle - Integrationsebene
 
 ### **IT-01 – HmiInput ↔ CooktopController (Zone aktivieren)**
 **Ziel:** Prüfen, ob der Aufruf von `HmiInput` korrekt an den `CooktopController` weitergegeben wird.
