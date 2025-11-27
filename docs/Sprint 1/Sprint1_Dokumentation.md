@@ -78,7 +78,7 @@ Ziel ist die Überprüfung:
 - korrekter Datenverwaltung  
 - stabilen, erwartungskonformen Verhaltens ohne externe Abhängigkeiten
 
-[📄 Testfälle – Modulebene](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung/blob/main/docs/Testf%C3%A4lle/Sprint1_Test_Modulebene.md)
+[📄 Testfälle – Modulebene](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung/blob/main/docs/Testf%C3%A4lle/Testf%C3%A4lle_Modulebene.md)
 
 Die definierten Testfälle decken die wichtigsten Basismodule ab:  
 `PowerControl`, `SafetyManager` und das Enum `ZoneID`.
@@ -103,7 +103,7 @@ Die **Integrationsebene** untersucht das Zusammenspiel zweier Komponenten und an
 - erwartetes Verhalten in der Zusammenarbeit  
 - Einhaltung der Architekturvorgaben  
 
-[📄 Testfälle - Integrationsebene](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung/blob/main/docs/Testf%C3%A4lle/Sprint1_Test_Integrationsebene.md)
+[📄 Testfälle - Integrationsebene](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung/blob/main/docs/Testf%C3%A4lle/Testf%C3%A4lle_Integrationsebene.md)
 
 | Test-ID | Komponenten                            | Zielsetzung                                              |
 |--------:|-----------------------------------------|----------------------------------------------------------|
