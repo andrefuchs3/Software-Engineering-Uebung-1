@@ -185,8 +185,6 @@ Trotz der hohen Übereinstimmung gab es zwei bewusste Erweiterungen, die sich im
 Im Verlauf der Implementierung, des Designs und der Testdurchführung in Sprint 1 wurden mehrere technische und organisatorische Erkenntnisse gewonnen.  
 Diese Erkenntnisse dienen als Grundlage für Verbesserungen in Sprint 2 und darüber hinaus.
 
----
-
 ### 7.1 Positiv aufgefallene Punkte
 
 #### ✔ Klare Modul- und Schichtenstruktur
@@ -205,7 +203,6 @@ Ergebnisse waren reproduzierbar und logisch nachvollziehbar – ein wichtiger Sc
 Die Umstellung des `SafetyManager` auf ein **Singleton-Pattern** sorgt dafür, dass die Kindersicherung systemweit konsistent bleibt.  
 Dies hat Fehlerquellen effektiv reduziert und die Architektur verbessert.
 
----
 
 ### 7.2 Herausforderungen und Verbesserungspotenziale
 
@@ -220,8 +217,6 @@ Der Controller gibt Fehlermeldungen über `HmiOutput` aus, aber intern existiert
 Alle Daten leben aktuell nur im Speicher.  
 Für spätere Erweiterungen könnte eine persistente oder zentral verwaltete Zustandslogik benötigt werden.
 
-
----
 
 ### 7.3 Auswirkungen auf Sprint 2 und spätere Sprints
 
