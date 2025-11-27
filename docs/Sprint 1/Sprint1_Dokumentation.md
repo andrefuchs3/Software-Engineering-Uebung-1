@@ -129,6 +129,8 @@ Alle Testfälle aus Sprint 1 sind direkt mit den Anforderungen verknüpft, die i
 | F-07       | Leistungsstufe anzeigen                | IT-02                 |
 | F-13       | Kindersicherung                        | MT-02, IT-03          |
 
+---
+
 ## 5. Durchgeführte Testläufe und Dokumentation der Ergebnisse
 
 Zur Verifikation der in **Sprint 1** implementierten Funktionalitäten wurde ein vollständiger manueller Testdurchlauf durchgeführt.
@@ -141,6 +143,8 @@ Die Testausführung erfolgte über die Datei [Test_Sprint1.java](https://github.
 - die **Beobachtungen strukturiert in der Konsole ausgibt**.
 
 Die erzeugten Konsolenausgaben wurden anschließend mit den erwarteten Reaktionen abgeglichen und dienten als Grundlage für die manuelle Bewertung der Testergebnisse.
+
+---
 
 # 6. Vergleich von Architektur/Design und Implementierung 
 
