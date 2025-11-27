@@ -146,7 +146,7 @@ Die erzeugten Konsolenausgaben wurden anschließend mit den erwarteten Reaktione
 
 ---
 
-# 6. Vergleich von Architektur/Design und Implementierung 
+## 6. Vergleich von Architektur/Design und Implementierung 
 
 Die Implementierung von Sprint 1 wurde mit der zuvor definierten Software-Architektur und dem Software-Design abgeglichen.  
 Insgesamt zeigt sich eine **hohe Übereinstimmung** zwischen Planung und tatsächlicher Umsetzung.  
