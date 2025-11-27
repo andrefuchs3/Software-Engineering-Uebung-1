@@ -1,4 +1,4 @@
-## Testfälle - Modulebene (Sprint 1)
+## Testfälle - Modulebene
 
 
 ### **MT-01 – Modul: power (PowerControl)**
