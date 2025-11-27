@@ -13,8 +13,8 @@ Ihre Erwartungen an Bedienkomfort, Sicherheit und Zuverlässigkeit bilden die Gr
 
 ## Lasten- und Pflichtenheft
 
-[Lastenheft](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung/blob/main/docs/referenziert/Requirement_Engineering/Lastenheft.md): Steuerung und Bedienkonzept eines Induktionskochfelds  
-[Pflichtenheft](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung/blob/main/docs/referenziert/Requirement_Engineering/Pflichtenheft.md): Umsetzung der Kochfeldsteuerung auf Softwareebene  
+[Lastenheft](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung/blob/main/docs/referenziert/Lastenheft.md): Steuerung und Bedienkonzept eines Induktionskochfelds  
+[Pflichtenheft](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung/blob/main/docs/referenziert/Pflichtenheft.md): Umsetzung der Kochfeldsteuerung auf Softwareebene  
 
 Beide Dokumente dienen als Orientierungshilfe, um die Anforderungen aus Sicht des Nutzers und aus Sicht der Entwicklung zu strukturieren.  
 Das Lastenheft beschreibt, **was** das System leisten soll, während das Pflichtenheft festlegt, **wie** diese Anforderungen technisch umgesetzt werden.  
