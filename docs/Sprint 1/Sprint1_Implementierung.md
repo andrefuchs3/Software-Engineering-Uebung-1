@@ -142,13 +142,4 @@ Die Sperre wirkt global, da `SafetyManager` als Singleton umgesetzt wurde.
 
 ---
 
-## 5. Demoausführung mit App.java
-
-Die Datei **App.java** demonstriert typische Szenarien:
-
-```java
-hmi.selectZone(ZoneID.FRONT_LEFT, true);
-hmi.increasePower(ZoneID.FRONT_LEFT);
-hmi.toggleChildLock();
-hmi.increasePower(ZoneID.FRONT_LEFT); // wird gesperrt
 
