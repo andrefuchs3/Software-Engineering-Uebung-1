@@ -220,16 +220,6 @@ Der Controller gibt Fehlermeldungen über `HmiOutput` aus, aber intern existiert
 Alle Daten leben aktuell nur im Speicher.  
 Für spätere Erweiterungen könnte eine persistente oder zentral verwaltete Zustandslogik benötigt werden.
 
-#### ⚠ **Versionierung hätte früher erfolgen sollen**
-Während Sprint 1 wurden mehrere Dokumente (Architektur, Design, Traceability, Tests) nachträglich aneinander angepasst.  
-Dabei wurde klar:  
-**Eine Versionierung (Tag/Baseline/Release) hätte *vor* der Angleichung der Dokumente erstellt werden sollen**,  
-um Veränderungen sauber nachverfolgen und vergleichen zu können.
-
-Diese Erfahrung fließt nun in die zukünftige Vorgehensweise ein:
-- frühzeitige Erstellung von Versionsständen  
-- klare Trennung zwischen Planung, Umsetzung und Dokumentationsangleichung  
-- Nutzung der Git-Historie zur Nachverfolgbarkeit
 
 ---
 
