@@ -142,4 +142,104 @@ Die Testausführung erfolgte über die Datei [Test_Sprint1.java](https://github.
 
 Die erzeugten Konsolenausgaben wurden anschließend mit den erwarteten Reaktionen abgeglichen und dienten als Grundlage für die manuelle Bewertung der Testergebnisse.
 
+# 6. Vergleich von Architektur/Design und Implementierung 
+
+Die Implementierung von Sprint 1 wurde mit der zuvor definierten Software-Architektur und dem Software-Design abgeglichen.  
+Insgesamt zeigt sich eine **hohe Übereinstimmung** zwischen Planung und tatsächlicher Umsetzung.  
+Alle zentralen Komponenten wurden wie vorgesehen implementiert:
+
+- `HmiInput` und `HmiOutput` im Modul **hmi**
+- `CooktopController` als zentrale Steuerkomponente
+- `ZoneManager` zur Verwaltung der Kochzonen
+- `PowerControl` zur Leistungsregelung
+- `SafetyManager` zur Eingabesicherheit
+- `Types.ZoneID` als typsichere Zonen-Definition
+
+Auch die vorgesehene **Schichtenarchitektur** (HMI → Controller → Module) wurde konsequent eingehalten.
+
+### Festgestellte Abweichungen
+
+Trotz der hohen Übereinstimmung gab es zwei bewusste Erweiterungen, die sich im Verlauf der Implementierung als sinnvoll oder notwendig herausgestellt haben:
+
+#### 1. Einführung des Singleton-Patterns für den SafetyManager
+- **Planung:** SafetyManager ohne spezielle Instanzierungsregelung  
+- **Implementierung:** SafetyManager als **Singleton** (`getInstance()`)
+- **Grund:**  
+  Die Kindersicherung soll systemweit einheitlich sein.  
+  Mehrere Instanzen könnten zu widersprüchlichen Zuständen führen.
+- **Begründung:**  
+  Sinnvolle Designverbesserung, keine negative Auswirkung auf die Architektur.
+
+#### 2. Ergänzung einer separaten Teststruktur (`src/tests`)
+- **Planung:** Keine explizite Teststruktur definiert
+- **Implementierung:** Ordner `src/tests` mit `Test_Sprint1.java` angelegt
+- **Grund:**  
+  Zur strukturierten Durchführung von Testfällen auf Modul- und Integrationsebene.
+- **Begründung:**  
+  Organisatorische Erweiterung, keine Abweichung im funktionalen Design.
+
+---
+
+## 7. Erkenntnisse aus Sprint 1
+
+Im Verlauf der Implementierung, des Designs und der Testdurchführung in Sprint 1 wurden mehrere technische und organisatorische Erkenntnisse gewonnen.  
+Diese Erkenntnisse dienen als Grundlage für Verbesserungen in Sprint 2 und darüber hinaus.
+
+---
+
+### 8.1 Positiv aufgefallene Punkte
+
+#### ✔ Klare Modul- und Schichtenstruktur
+Die zuvor definierte Schichtenarchitektur (HMI → Controller → Fachmodule) hat sich als sinnvoll erwiesen.  
+Die Verantwortlichkeiten der Komponenten blieben sauber getrennt, wodurch die Implementierung nachvollziehbar und wartbar war.
+
+#### ✔ Gute Erweiterbarkeit
+Durch die modulare Struktur konnten Funktionen wie Kindersicherung, Leistungssteuerung, HMI-Eingaben und Displayausgaben klar getrennt implementiert werden.  
+Dies erleichtert zukünftige Erweiterungen (z. B. Timerfunktion, akustische Signale).
+
+#### ✔ Einführung einer Teststruktur ist hilfreich
+Der separate Ordner `src/tests` und die Datei `Test_Sprint1.java` haben den Testprozess wesentlich vereinfacht.  
+Ergebnisse waren reproduzierbar und logisch nachvollziehbar – ein wichtiger Schritt hin zu strukturierter Qualitätssicherung.
+
+#### ✔ Design Pattern (Singleton) wirkt stabilisierend
+Die Umstellung des `SafetyManager` auf ein **Singleton-Pattern** sorgt dafür, dass die Kindersicherung systemweit konsistent bleibt.  
+Dies hat Fehlerquellen effektiv reduziert und die Architektur verbessert.
+
+---
+
+### 8.2 Herausforderungen und Verbesserungspotenziale
+
+#### ⚠ HMI-Ausgaben abhängig von Console-Output  
+Aktuell erfolgt die Validierung vieler Testfälle durch manuelle Sichtprüfung des Console-Outputs.  
+Dies ist zwar für Sprint 1 ausreichend, aber langfristig fehleranfällig.
+
+#### ⚠ Fehlendes Fehler-/Statushandling  
+Der Controller gibt Fehlermeldungen über `HmiOutput` aus, aber intern existiert kein explizit modelliertes Fehler- oder Statussystem.  
+
+#### ⚠ Noch keine persistente Zustandsverwaltung  
+Alle Daten leben aktuell nur im Speicher.  
+Für spätere Erweiterungen könnte eine persistente oder zentral verwaltete Zustandslogik benötigt werden.
+
+#### ⚠ **Versionierung hätte früher erfolgen sollen**
+Während Sprint 1 wurden mehrere Dokumente (Architektur, Design, Traceability, Tests) nachträglich aneinander angepasst.  
+Dabei wurde klar:  
+**Eine Versionierung (Tag/Baseline/Release) hätte *vor* der Angleichung der Dokumente erstellt werden sollen**,  
+um Veränderungen sauber nachverfolgen und vergleichen zu können.
+
+Diese Erfahrung fließt nun in die zukünftige Vorgehensweise ein:
+- frühzeitige Erstellung von Versionsständen  
+- klare Trennung zwischen Planung, Umsetzung und Dokumentationsangleichung  
+- Nutzung der Git-Historie zur Nachverfolgbarkeit
+
+---
+
+### 8.3 Auswirkungen auf Sprint 2 und spätere Sprints
+
+- **Einführung automatisierter Tests** (JUnit)
+- **Erweiterung der Architektur um Timer und weitere Logik**
+- **Einführung strukturierter Fehlerbehandlung**
+- **Konsequente Versionierung nach jedem Meilenstein**
+- **Vorbereitung auf weitere Design Patterns (Strategy/State)**
+
+Diese Erkenntnisse werden in Sprint 2 berücksichtigt und dienen der Verbesserung des Entwicklungsprozesses.
 
