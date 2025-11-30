@@ -199,9 +199,6 @@ Die Verantwortlichkeiten der Komponenten blieben sauber getrennt, wodurch die Im
 Durch die modulare Struktur konnten Funktionen wie Kindersicherung, Leistungssteuerung, HMI-Eingaben und Displayausgaben klar getrennt implementiert werden.  
 Dies erleichtert zukünftige Erweiterungen (z. B. Timerfunktion, akustische Signale).
 
-#### ✔ Einführung einer Teststruktur ist hilfreich
-Der separate Ordner `src/tests` und die Datei `Test_Sprint1.java` haben den Testprozess wesentlich vereinfacht.  
-Ergebnisse waren reproduzierbar und logisch nachvollziehbar – ein wichtiger Schritt hin zu strukturierter Qualitätssicherung.
 
 #### ✔ Design Pattern (Singleton) wirkt stabilisierend
 Die Umstellung des `SafetyManager` auf ein **Singleton-Pattern** sorgt dafür, dass die Kindersicherung systemweit konsistent bleibt.  
