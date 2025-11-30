@@ -136,7 +136,7 @@ Alle Testfälle aus Sprint 1 sind direkt mit den Anforderungen verknüpft, die i
 Zur Verifikation der in **Sprint 1** implementierten Funktionalitäten wurde ein vollständiger manueller Testdurchlauf durchgeführt.
 Alle definierten Testfälle auf **Modulebene** und **Integrationsebene** wurden einzeln ausgeführt und die Ergebnisse dokumentiert.
 
-Die Testausführung erfolgte über die Datei [Test_Sprint1.java](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung/blob/main/src/tests/Test_Sprint1.java), welche:
+Die Testausführung erfolgte über die Datei [Test_Sprint1.java](https://github.com/andrefuchs3/Software-Engineering-Induktionskochfeld-Kochfeldsteuerung/blob/main/tests/Test_Sprint1.java), welche:
 
 - die notwendigen **Systemzustände vorbereitet**,
 - die definierten **Aktionen der einzelnen Testfälle ausführt**,
@@ -176,7 +176,7 @@ Trotz der hohen Übereinstimmung gab es zwei bewusste Erweiterungen, die sich im
 
 #### 2. Ergänzung einer separaten Teststruktur (`src/tests`)
 - **Planung:** Keine explizite Teststruktur definiert
-- **Implementierung:** Ordner `src/tests` mit `Test_Sprint1.java` angelegt
+- **Implementierung:** Ordner `tests` mit `Test_Sprint1.java` angelegt
 - **Grund:**  
   Zur strukturierten Durchführung von Testfällen auf Modul- und Integrationsebene.
 - **Begründung:**  
