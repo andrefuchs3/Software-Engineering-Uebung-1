@@ -73,19 +73,19 @@ Timer-Manager ergänzt:
 Die UML-Diagramme für Sprint 2 liegen im Ordner  
 `docs/Sprint 2/UML-Diagramme/` und wurden mit PlantUML erzeugt.
 
-- **Klassendiagramm**  
+**Klassendiagramm**  
   ![Klassendiagramm](./UML-Diagramme/Klassendiagramm_Sprint2.png)
   
 zeigt insbesondere die neue Klasse `TimerManager` und die erweiterten
 Methoden in `CooktopController`, `HmiInput` und `HmiOutput`.
     
-- **Kommunikationsdiagramm – Timerfunktion**  
+**Kommunikationsdiagramm – Timerfunktion**  
   ![Kommunikationsdiagramm](./UML-Diagramme/Kommunikationsdiagramm_Timer.png)
   
 stellt die Interaktionen zwischen `HmiInput`, `CooktopController`,
 `TimerManager`, `ZoneManager` und `HmiOutput` dar.
 
-- **Sequenzdiagramm – Use Case „Timer läuft ab“**  
+**Sequenzdiagramm – Use Case „Timer läuft ab“**  
   ![Sequenzdiagramm](./UML-Diagramme/Sequenzdiagramm_Timer.png)
   
 beschreibt den Ablauf vom Setzen eines Timers bis zur Auto-Abschaltung
