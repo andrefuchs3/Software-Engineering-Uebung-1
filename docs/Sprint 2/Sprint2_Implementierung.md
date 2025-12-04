@@ -12,7 +12,7 @@ Die Implementierungsumgebung entspricht Sprint 1:
 Die Modul- und Paketstruktur wurde um die Timer-Funktionalität erweitert:
 
 ```text
-/src/main/java
+/src/
  ├─ core
  │   ├─ CooktopController.java   (erweitert um Timer-Logik)
  │   ├─ ZoneManager.java
