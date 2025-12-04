@@ -3,109 +3,88 @@ import hmi.HmiInput;
 import hmi.HmiOutput;
 import util.Types.ZoneID;
 
-/**
- * Demo-Anwendung für Sprint 2:
- * - Timer setzen
- * - Timer ticken lassen (Ablauf)
- * - Timer ändern
- * - Timer abbrechen
- *
- * Die eigentliche Logik liegt in CooktopController / TimerManager / HmiInput.
- */
 public class Sprint2_App {
 
     public static void main(String[] args) {
-        System.out.println("===== Sprint 2 – Timer-Demo =====");
 
         HmiOutput out = new HmiOutput();
         CooktopController ctl = new CooktopController(out);
         HmiInput hmi = new HmiInput(ctl);
 
-        // Für alle Szenarien verwenden wir die vordere linke Kochzone
-        ZoneID zone = ZoneID.FRONT_LEFT;
+        System.out.println("===== Sprint 2 – Demo Timerfunktion =====");
 
-        demoScenario1_TimerLäuftAb(hmi, zone);
-        demoScenario2_TimerÄndern(hmi, zone);
-        demoScenario3_TimerAbbrechen(hmi, zone);
+        demoTimerLaeuftAb(hmi);
+        demoTimerAendern(hmi);
+        demoTimerAbbrechen(hmi);
 
         System.out.println("===== Demo beendet =====");
     }
 
-    /**
-     * Szenario 1:
-     * - Zone aktivieren
-     * - Timer setzen
-     * - Tick auf Ablauf -> Zone wird deaktiviert
-     */
-    private static void demoScenario1_TimerLäuftAb(HmiInput hmi, ZoneID zone) {
+    // ------------------------------------------------------------------
+    // 1) Timer läuft normal ab
+    // ------------------------------------------------------------------
+    private static void demoTimerLaeuftAb(HmiInput hmi) {
         System.out.println("\n--- Szenario 1: Timer läuft ab ---");
 
-        // Zone einschalten (Sprint 1 Funktionalität)
+        ZoneID zone = ZoneID.FRONT_LEFT;
+
+        // Zone aktivieren und Timer setzen, z.B. 5 Sekunden
         hmi.selectZone(zone, true);
+        hmi.setTimer(zone, 5);
 
-        // Timer für 30 Sekunden setzen
-        System.out.println("Setze Timer auf 30 Sekunden …");
-        hmi.setTimer(zone, 30);
-
-        // Zeit simuliert vergehen lassen
-        System.out.println("Simuliere 3 Ticks à 10 Sekunden …");
-        hmi.tickTimer(10);
-        hmi.tickTimer(10);
-        hmi.tickTimer(10); // hier sollte der Timer ablaufen
-
-        System.out.println("--- Ende Szenario 1 ---");
+        // 5 Ticks simulieren (z.B. 1 Tick = 1 Sekunde)
+        for (int i = 0; i < 5; i++) {
+            hmi.tickTimer();
+        }
     }
 
-    /**
-     * Szenario 2:
-     * - Timer setzen
-     * - Nach einiger Zeit Timer auf neuen Wert ändern
-     */
-    private static void demoScenario2_TimerÄndern(HmiInput hmi, ZoneID zone) {
+    // ------------------------------------------------------------------
+    // 2) Timer wird geändert (Restzeit verkürzt)
+    // ------------------------------------------------------------------
+    private static void demoTimerAendern(HmiInput hmi) {
         System.out.println("\n--- Szenario 2: Timer wird geändert ---");
 
-        // Zone erneut aktivieren (falls sie am Ende von Szenario 1 deaktiviert wurde)
+        ZoneID zone = ZoneID.FRONT_RIGHT;
+
         hmi.selectZone(zone, true);
+        hmi.setTimer(zone, 10);   // Start mit 10 Sekunden
 
-        System.out.println("Setze Timer auf 60 Sekunden …");
-        hmi.setTimer(zone, 60);
+        // ein paar Ticks laufen lassen, z.B. 4 Sekunden
+        for (int i = 0; i < 4; i++) {
+            hmi.tickTimer();
+        }
 
-        System.out.println("Simuliere 20 Sekunden …");
-        hmi.tickTimer(20);
+        // Timer verkürzen, z.B. auf 3 Sekunden Restzeit
+        hmi.changeTimer(zone, 3);
 
-        System.out.println("Ändere Timer auf 40 Sekunden Restlaufzeit …");
-        hmi.changeTimer(zone, 40);
-
-        System.out.println("Simuliere weitere 40 Sekunden …");
-        hmi.tickTimer(20);
-        hmi.tickTimer(20); // hier sollte der geänderte Timer ablaufen
-
-        System.out.println("--- Ende Szenario 2 ---");
+        // weitere 3 Ticks – Timer sollte jetzt ablaufen
+        for (int i = 0; i < 3; i++) {
+            hmi.tickTimer();
+        }
     }
 
-    /**
-     * Szenario 3:
-     * - Timer setzen
-     * - Vor Ablauf manuell abbrechen
-     */
-    private static void demoScenario3_TimerAbbrechen(HmiInput hmi, ZoneID zone) {
+    // ------------------------------------------------------------------
+    // 3) Timer wird abgebrochen
+    // ------------------------------------------------------------------
+    private static void demoTimerAbbrechen(HmiInput hmi) {
         System.out.println("\n--- Szenario 3: Timer wird abgebrochen ---");
 
+        ZoneID zone = ZoneID.BACK_LEFT;
+
         hmi.selectZone(zone, true);
+        hmi.setTimer(zone, 8);
 
-        System.out.println("Setze Timer auf 45 Sekunden …");
-        hmi.setTimer(zone, 45);
+        // 3 Ticks laufen lassen
+        for (int i = 0; i < 3; i++) {
+            hmi.tickTimer();
+        }
 
-        System.out.println("Simuliere 15 Sekunden …");
-        hmi.tickTimer(15);
-
-        System.out.println("Breche Timer ab …");
+        // Timer abbrechen
         hmi.cancelTimer(zone);
 
-        System.out.println("Simuliere weitere 40 Sekunden (es darf kein Auto-Off mehr passieren) …");
-        hmi.tickTimer(20);
-        hmi.tickTimer(20);
-
-        System.out.println("--- Ende Szenario 3 ---");
+        // weitere Ticks – es darf kein Ablauf mehr gemeldet werden
+        for (int i = 0; i < 5; i++) {
+            hmi.tickTimer();
+        }
     }
 }
