@@ -73,7 +73,3 @@ Die Timer-Funktionalität wurde vollständig innerhalb der bestehenden Architekt
    - Benutzer erhält eine Rückmeldung über:
      - `HmiOutput.showTimerExpired(zone)`  
      - `HmiOutput.beep()` (akustisches Signal)
-
----
-
-Dieser Implementierungsüberblick zeigt, wie Sprint 2 die bestehende Architektur erweitert, ohne sie zu brechen, und wie die Timerlogik nahtlos in die vorhandenen Module eingebettet wurde.
