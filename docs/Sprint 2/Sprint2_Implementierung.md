@@ -29,8 +29,7 @@ Die Modul- und Paketstruktur wurde um die Timer-Funktionalität erweitert:
 ```
 ## 2. Bezug zur Traceability-Matrix
 
-Die in **Sprint 2** implementierten Funktionen decken folgende Requirements ab  
-(siehe [Traceability-Matrix](../Traceability-Matrix.md)):
+Die in **Sprint 2** implementierten Funktionen decken folgende Requirements ab (siehe [Traceability-Matrix](../Traceability-Matrix.md)):
 
 | **Req-ID** | **Inhalt**                                  | **Abgedeckt durch**                                                       |
 |------------|----------------------------------------------|---------------------------------------------------------------------------|
