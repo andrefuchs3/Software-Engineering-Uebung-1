@@ -1,0 +1,97 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+' bekannte Klassen (Sprint 1)
+class HmiInput {
+  +selectZone(zoneID, active)
+  +increasePower(zoneID)
+  +decreasePower(zoneID)
+  +toggleChildLock()
+  --
+  +setTimer(zoneID, seconds)
+  +changeTimer(zoneID, seconds)
+  +cancelTimer(zoneID)
+  +tickTimer()
+}
+
+class CooktopController {
+  -childLockActive : boolean
+  -powerControl    : PowerControl
+  -zoneManager     : ZoneManager
+  -timerManager    : TimerManager
+  -hmiOutput       : HmiOutput
+  --
+  +setZoneActive(zoneID, active)
+  +increasePower(zoneID)
+  +decreasePower(zoneID)
+  +toggleChildLock()
+  +updateDisplay()
+  --
+  +setTimer(zoneID, seconds)
+  +changeTimer(zoneID, seconds)
+  +cancelTimer(zoneID)
+  +handleTimerTick()
+}
+
+class PowerControl {
+  -powerLevel : Map<ZoneID, int>
+  +increaseLevel(zoneID)
+  +decreaseLevel(zoneID)
+  +getLevel(zoneID) : int
+}
+
+class ZoneManager {
+  -zones : Map<ZoneID, boolean>
+  +setActive(zoneID, active)
+  +isActive(zoneID) : boolean
+}
+
+class SafetyManager {
+  -instance : SafetyManager
+  -childLock : boolean
+  -SafetyManager()
+  +getInstance() : SafetyManager
+  +isLocked() : boolean
+  +lockInput()
+  +unlockInput()
+}
+
+class HmiOutput {
+  +showActiveZone(zoneID)
+  +showPowerLevel(zoneID, level)
+  +showLock()
+  +showError(message)
+  --
+  +showTimer(zoneID, remaining)
+  +showTimerExpired(zoneID)
+  +beep()
+}
+
+'class für Zonen-Identifikatoren
+class Types {
+}
+Types : enum ZoneID { FRONT_LEFT, FRONT_RIGHT, BACK_LEFT, BACK_RIGHT }
+
+' neue Klasse Sprint 2
+class TimerManager {
+  -remainingTime : Map<ZoneID, int>
+  +startTimer(zoneID, seconds)
+  +changeTimer(zoneID, seconds)
+  +cancelTimer(zoneID)
+  +tick() : List<ZoneID>
+  +getRemainingTime(zoneID) : int
+}
+
+HmiInput --> CooktopController
+CooktopController --> PowerControl
+CooktopController --> ZoneManager
+CooktopController --> SafetyManager
+CooktopController --> TimerManager
+CooktopController --> HmiOutput
+TimerManager --> Types
+ZoneManager --> Types
+PowerControl --> Types
+HmiInput --> Types
+HmiOutput --> Types
+
+@enduml
