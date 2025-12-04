@@ -1,0 +1,20 @@
+@startuml
+object User
+object HmiInput
+object CooktopController
+object TimerManager
+object ZoneManager
+object HmiOutput
+
+User -> HmiInput : setTimer(zone, seconds)
+HmiInput -> CooktopController : setTimer(zone, seconds)
+CooktopController -> TimerManager : startTimer(zone, seconds)
+CooktopController -> HmiOutput : showTimer(zone, seconds)
+
+CooktopController -> TimerManager : tick()
+TimerManager -> CooktopController : timerExpired(zone)
+CooktopController -> ZoneManager : setActive(zone, false)
+CooktopController -> HmiOutput : showTimerExpired(zone)
+CooktopController -> HmiOutput : beep()
+
+@enduml
