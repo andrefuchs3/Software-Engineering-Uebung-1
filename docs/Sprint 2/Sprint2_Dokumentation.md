@@ -70,8 +70,7 @@ Timer-Manager ergänzt:
 
 ## UML-Diagramme Sprint 2
 
-Die UML-Diagramme für Sprint 2 liegen im Ordner  
-`docs/Sprint 2/UML-Diagramme/` und wurden mit PlantUML erzeugt.
+Die UML-Diagramme für Sprint 2 liegen im Ordner `docs/Sprint 2/UML-Diagramme/` und wurden mit PlantUML erzeugt.
 
 **Klassendiagramm**  
   ![Klassendiagramm](./UML-Diagramme/Klassendiagramm_Sprint2.png)
