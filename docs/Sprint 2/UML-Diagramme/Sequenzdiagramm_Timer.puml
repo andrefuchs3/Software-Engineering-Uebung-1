@@ -1,0 +1,26 @@
+@startuml
+actor User
+participant HmiInput
+participant CooktopController as Ctl
+participant TimerManager as TM
+participant ZoneManager as ZM
+participant HmiOutput as HMI
+
+== Timer setzen ==
+User -> HmiInput : setTimer(zone, 300s)
+HmiInput -> Ctl : setTimer(zone, 300)
+Ctl -> TM : startTimer(zone, 300)
+Ctl -> HMI : showTimer(zone, 300)
+
+== Timer läuft ab ==
+loop jede Sekunde
+  Ctl -> TM : tick()
+  TM --> Ctl : abgelaufene Zonen?
+end
+
+Ctl -> ZM : setActive(zone, false)
+Ctl -> HMI : showActiveZone(zone = AUS)
+Ctl -> HMI : showTimerExpired(zone)
+Ctl -> HMI : beep()
+
+@enduml
