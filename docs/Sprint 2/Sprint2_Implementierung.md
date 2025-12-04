@@ -26,7 +26,7 @@ Die Modul- und Paketstruktur wurde um die Timer-Funktionalität erweitert:
  │   └─ HmiOutput.java           (erweitert: Timer-/Fehleranzeige)
  └─ util
      └─ Types.java
-
+```
 ## 2. Bezug zur Traceability-Matrix
 
 Die in **Sprint 2** implementierten Funktionen decken folgende Requirements ab  
