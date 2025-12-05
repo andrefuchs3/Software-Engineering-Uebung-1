@@ -121,7 +121,7 @@ Ziel ist die Überprüfung:
 - korrekter Behandlung von Ablaufereignissen
 - korrekter Änderung und Deaktivierung von Timern
 
-[📄 Testfälle – Modulebene](../Testfälle/Testfälle_Modulebene.md)
+[📄 Testfälle – Modulebene](../../Testfälle/Testfälle_Modulebene.md)
 
 Die neuen Testfälle für Sprint 2 sind:
 
@@ -139,7 +139,7 @@ Diese Tests stellen sicher, dass die Timerlogik unabhängig von der restlichen A
 
 Die **Integrationsebene** prüft das Zusammenspiel der neuen Timerfunktionen mit HMI, Controller und Zonenverwaltung:
 
-[📄 Testfälle – Integrationsebene](../Testfälle/Testfälle_Integrationsebene.md)
+[📄 Testfälle – Integrationsebene](../../Testfälle/Testfälle_Integrationsebene.md)
 
 | Test-ID | Komponenten                                            | Zielsetzung                                                                 |
 |--------:|--------------------------------------------------------|------------------------------------------------------------------------------|
