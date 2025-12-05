@@ -218,10 +218,6 @@ Damit bleibt die **Schichtenarchitektur** HMI → Controller → Fachmodule auch
    - Statt eines echten asynchronen Timers (Thread/TimerTask) wird eine einfache, synchrone Tick-Logik verwendet, die bei jedem Aufruf von `tick()` die Restzeiten reduziert.  
    - Dies entspricht dem Übungsrahmen und ist mit dem ursprünglichen Architekturlevel kompatibel.
 
-3. **Reorganisierte Teststruktur im Repository**  
-   - Die Testklassen wurden in den Ordner **`tests/`** auf oberster Ebene verschoben, sodass sie – wie von der Praktikumsbetreuung gefordert – auf derselben Ebene wie `src` und `docs` liegen.  
-   - Dies betrifft nur die Projektstruktur, nicht die Softwarearchitektur.
-
 Insgesamt liegt eine **hohe Übereinstimmung** zwischen dem in Sprint 2 geplanten Design und der tatsächlich umgesetzten Lösung vor.
 
 ---
