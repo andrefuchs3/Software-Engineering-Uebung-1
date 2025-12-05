@@ -54,7 +54,7 @@
 | Aktion             | `startTimer(FRONT_LEFT, 5)` aufrufen, danach 5× `tick()` ausführen.          |
 | Erwartete Reaktion | Interne Restzeit wird von 5 auf 0 heruntergezählt. Beim Übergang auf 0 wird ein Ablauf-Ereignis für `FRONT_LEFT` erzeugt (z. B. Rückgabe/Callback). |
 | Nachbedingung      | Kein positiver Restwert mehr für `FRONT_LEFT`; Timer für diese Zone gilt als **abgelaufen**. |
-| Ergebnis           | – (wird nach Testdurchführung eingetragen, z. B. *Bestanden* / *Fehlverhalten*) |
+| Ergebnis           | Bestanden |
 
 ---
 
@@ -69,7 +69,7 @@
 | Aktion             | Aufruf von `changeTimer(FRONT_RIGHT, 3)`. Anschließend 3× `tick()` ausführen. |
 | Erwartete Reaktion | Restzeit wird unmittelbar auf 3 gesetzt. Nach 3 weiteren `tick()` läuft der Timer ab und erzeugt ein Ablauf-Ereignis für `FRONT_RIGHT`. |
 | Nachbedingung      | Timer für `FRONT_RIGHT` ist nach genau 3 Ticks abgelaufen. Kein weiterer Ablauf für diese Zone nach zusätzlichen Ticks. |
-| Ergebnis           | – |
+| Ergebnis           | Bestanden |
 
 ---
 
@@ -84,6 +84,6 @@
 | Aktion             | 3× `tick()` ausführen, danach `cancelTimer(BACK_LEFT)` aufrufen und anschließend weitere 10× `tick()` ausführen. |
 | Erwartete Reaktion | Während der ersten 3 Ticks wird die Restzeit reduziert. Nach `cancelTimer(...)` tritt **kein** Ablauf-Ereignis für `BACK_LEFT` mehr auf. |
 | Nachbedingung      | Timer für `BACK_LEFT` gilt als **inaktiv**; kein Ablauf-Ereignis wurde nach dem Cancel registriert. |
-| Ergebnis           | – |
+| Ergebnis           | Bestanden |
 
 ---
