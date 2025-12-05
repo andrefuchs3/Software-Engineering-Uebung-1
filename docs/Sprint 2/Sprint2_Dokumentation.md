@@ -180,8 +180,7 @@ HMI-Statusmeldungen und Timeranzeigen konzeptionell unterstützt.
 Zur Verifikation der in **Sprint 2** implementierten Timerfunktionen wurde ein manueller Testdurchlauf durchgeführt.  
 Alle definierten Testfälle auf **Modulebene** (MT-04 bis MT-06) und **Integrationsebene** (IT-04 bis IT-09) wurden ausgeführt.
 
-Die Testausführung erfolgte über die Datei  
-[`Test_Sprint2.java`](../../tests/Test_Sprint2.java), welche
+Die Testausführung erfolgte über die Datei [`Test_Sprint2.java`](../../tests/Test_Sprint2.java), welche
 
 - die notwendigen **Systemzustände vorbereitet**,  
 - die **Aktionen der jeweiligen Testfälle sequenziell ausführt**,  
