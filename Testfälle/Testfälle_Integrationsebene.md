@@ -84,3 +84,5 @@
 | Erwartete Reaktion | 1. Restzeit im `TimerManager` wird auf 3 gesetzt und über `showTimer(...)` angezeigt. 2. Nach 2 Ticks ist Restzeit = 1. 3. Nach `cancelTimer(...)` wird der Timer gelöscht; Anzeige kann aktualisiert werden (z. B. kein Timer mehr). 4. Es tritt **kein** Ablauf-Ereignis und kein `showTimerExpired(...)`/`beep()` für `BACK_LEFT` auf. |
 | Nachbedingung      | Timer für `BACK_LEFT` ist inaktiv; keine Deaktivierung der Zone aufgrund des abgebrochenen Timers. |
 | Ergebnis           | – |
+
+---
