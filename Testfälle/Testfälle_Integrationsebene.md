@@ -86,3 +86,47 @@
 | Ergebnis           | – |
 
 ---
+
+### IT-07 – Auto-Deaktivierung nach Timerablauf (End-to-End)
+
+**Ziel:** Prüfen, ob nach Ablauf des Timers die Kochzone automatisch deaktiviert wird, wenn der Timer über `HmiInput` gesetzt wurde.
+
+| Punkt              | Beschreibung                                                                 |
+|--------------------|------------------------------------------------------------------------------|
+| **Komponenten**    | `HmiInput`, `CooktopController`, `TimerManager`, `ZoneManager`, `HmiOutput` |
+| **Vorbedingung**   | Zone `FRONT_LEFT` ist aktiv, Timer ist noch **nicht** gesetzt. Kindersicherung ist **aus**. |
+| **Aktion**         | 1. `hmi.selectZone(FRONT_LEFT, true)` (falls noch nicht aktiv). <br>2. `hmi.setTimer(FRONT_LEFT, 2)` aufrufen. <br>3. 2× `hmi.tickTimer()` ausführen. |
+| **Erwartete Reaktion** | Nach dem letzten Tick meldet der `TimerManager` den Ablauf. Der `CooktopController` setzt `ZoneManager.setActive(FRONT_LEFT, false)` und die Leistungsstufe auf 0 zurück; die Statusanzeige wird aktualisiert (z. B. AUS/Restwärme). |
+| **Nachbedingung**  | Zone `FRONT_LEFT` ist inaktiv, Leistungsstufe = 0; HMI zeigt den deaktivierten Zustand nach Timerablauf. |
+| **Ergebnis**       | – |
+
+---
+
+### IT-08 – Visuelle & akustische Rückmeldung nach Timerablauf
+
+**Ziel:** Prüfen, ob nach Ablauf des Timers eine visuelle und akustische Rückmeldung über `HmiOutput` erfolgt.
+
+| Punkt              | Beschreibung                                                                 |
+|--------------------|------------------------------------------------------------------------------|
+| **Komponenten**    | `HmiInput`, `CooktopController`, `TimerManager`, `HmiOutput`                 |
+| **Vorbedingung**   | Zone `FRONT_LEFT` ist aktiv, Timer noch nicht gesetzt, Kindersicherung = aus. |
+| **Aktion**         | 1. `hmi.setTimer(FRONT_LEFT, 1)` aufrufen. <br>2. 1× `hmi.tickTimer()` ausführen. |
+| **Erwartete Reaktion** | Beim Ablauf ruft der Controller `HmiOutput.showTimerExpired(FRONT_LEFT)` und anschließend `HmiOutput.beep()` auf. |
+| **Nachbedingung**  | In der Konsole ist eine Meldung zum abgelaufenen Timer sichtbar; zusätzlich wurde ein akustisches Signal (beep) ausgegeben. |
+| **Ergebnis**       | – |
+
+---
+
+### IT-09 – Timeränderung / Abbruch über HmiInput (End-to-End)
+
+**Ziel:** Prüfen, ob ein bereits gesetzter Timer über `HmiInput` geändert und anschließend abgebrochen werden kann, ohne dass ein Ablaufereignis ausgelöst wird.
+
+| Punkt              | Beschreibung                                                                 |
+|--------------------|------------------------------------------------------------------------------|
+| **Komponenten**    | `HmiInput`, `CooktopController`, `TimerManager`, `HmiOutput`                 |
+| **Vorbedingung**   | Zone `FRONT_LEFT` ist aktiv. Es ist **kein** Timer gesetzt. Kindersicherung = aus. |
+| **Aktion**         | 1. `hmi.setTimer(FRONT_LEFT, 10)` aufrufen. <br>2. `hmi.changeTimer(FRONT_LEFT, 5)` aufrufen. <br>3. 1× `hmi.tickTimer()` ausführen. <br>4. `hmi.cancelTimer(FRONT_LEFT)` aufrufen. <br>5. Mehrfach `hmi.tickTimer()` ausführen (z. B. 5×). |
+| **Erwartete Reaktion** | 1. Timer wird mit 10 s angelegt und auf der Anzeige dargestellt. <br>2. Restzeit wird auf 5 s gesetzt und aktualisiert angezeigt. <br>3. Nach einem Tick ist die Restzeit reduziert (z. B. 4 s). <br>4. Nach `cancelTimer(...)` wird der Timer im `TimerManager` entfernt; weitere Ticks führen **nicht** zu `showTimerExpired(...)` oder `beep()`. |
+| **Nachbedingung**  | Für `FRONT_LEFT` existiert kein aktiver Timer mehr; die Zone bleibt weiterhin aktiv, es gab kein Timerablauf-Ereignis. |
+| **Ergebnis**       | – |
+
