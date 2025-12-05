@@ -13,7 +13,7 @@ den logischen Softwarekomponenten, den Software-Design-Komponenten, den Sprints 
 | F-06 | Statusanzeige (aus, aktiv, Restwärme) | Anzeigeeinheit / Kochfeldlogik | cooktopController, zoneManager, hmiOutput | 2 | core, hmi | IT-04 | Bestanden |
 | F-07 | Leistungsstufe jederzeit ablesbar | Anzeigeeinheit | hmiOutput, cooktopController | 1 | core, hmi | IT-02 | Bestanden |
 | F-08 | Fehler-/Sperrzustände anzeigen | Sicherheitssystem / Anzeigeeinheit | safetyManager, hmiOutput | 2 | hmi, safety | IT-05 | Bestanden |
-| F-09 | Timerfunktion pro Kochzone | Zeitsteuerung / Bedienoberfläche | timerManager, cooktopController, hmiInput | 2 | core, hmi | MT-04, IT-06 Bestanden |
+| F-09 | Timerfunktion pro Kochzone | Zeitsteuerung / Bedienoberfläche | timerManager, cooktopController, hmiInput | 2 | core, hmi | MT-04, IT-06 | Bestanden |
 | F-10 | Auto-Deaktivierung nach Timer-Ablauf | Zeitsteuerung / Kochfeldlogik | timerManager, cooktopController | 2 | core | MT-05, IT-07 | Bestanden |
 | F-11 | Visuelle & akustische Rückmeldung | Anzeigeeinheit / Signalgeber | hmiOutput, timerManager | 2 | hmi | IT-08 | Bestanden |
 | F-12 | Timeränderung / Abbruch | Zeitsteuerung / Bedienoberfläche | timerManager, cooktopController, hmiInput | 2 | core, hmi | MT-06, IT-09 | Bestanden |
