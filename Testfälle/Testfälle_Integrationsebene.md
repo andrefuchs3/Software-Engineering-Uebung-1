@@ -40,3 +40,47 @@
 | **Nachbedingung** | `SafetyManager.isLocked()` ist **true**. Leistungsstufe bleibt **0**. |
 | **Ergebnis** | Bestanden - Konsole zeigt Blockierung + Fehlermeldung |
 
+---
+
+### IT-04 – HmiInput ↔ CooktopController ↔ TimerManager (Timer setzen & anzeigen)
+
+**Ziel:** Prüfen, ob das Setzen eines Timers vom Benutzer bis in den `TimerManager` durchgereicht wird und korrekt auf der Anzeige erscheint.
+
+| Punkt              | Beschreibung                                                                 |
+|--------------------|------------------------------------------------------------------------------|
+| Komponenten        | `HmiInput`, `CooktopController`, `TimerManager`, `HmiOutput`                 |
+| Vorbedingung       | Kochfeld ist initialisiert. Zone `FRONT_LEFT` ist aktiv. Kein Timer gesetzt. |
+| Aktion             | Aufruf von `hmi.setTimer(FRONT_LEFT, 5)`.                                   |
+| Erwartete Reaktion | `HmiInput` ruft `CooktopController.setTimer(FRONT_LEFT, 5)` auf. Der Controller delegiert an `TimerManager.startTimer(...)` und aktualisiert über `HmiOutput.showTimer(FRONT_LEFT, 5)` die Anzeige. |
+| Nachbedingung      | Timer für `FRONT_LEFT` ist im `TimerManager` mit Restzeit 5 registriert; Anzeige zeigt den gesetzten Timerwert. |
+| Ergebnis           | – |
+
+---
+
+### IT-05 – CooktopController ↔ TimerManager ↔ ZoneManager/HmiOutput (Timerablauf)
+
+**Ziel:** Prüfen, ob beim Ablauf des Timers die Zone deaktiviert und der Benutzer informiert wird.
+
+| Punkt              | Beschreibung                                                                 |
+|--------------------|------------------------------------------------------------------------------|
+| Komponenten        | `CooktopController`, `TimerManager`, `ZoneManager`, `HmiOutput`              |
+| Vorbedingung       | Zone `FRONT_LEFT` ist aktiv, Leistungsstufe > 0, Timer für diese Zone läuft mit Restzeit 3. Kindersicherung ist **aus**. |
+| Aktion             | 3× `handleTimerTick()` im Controller aufrufen (z. B. via `hmi.tickTimer()`). |
+| Erwartete Reaktion | Der `TimerManager` meldet Ablauf für `FRONT_LEFT`. Der `CooktopController` setzt `ZoneManager.setActive(FRONT_LEFT, false)`, setzt die Leistungsstufe auf 0 zurück und ruft `HmiOutput.showTimerExpired(FRONT_LEFT)` sowie `HmiOutput.beep()` auf. |
+| Nachbedingung      | Zone `FRONT_LEFT` ist inaktiv, Leistungsstufe = 0; Anzeige zeigt abgelaufenen Timer, akustisches Signal wurde ausgegeben. |
+| Ergebnis           | – |
+
+---
+
+### IT-06 – HmiInput ↔ CooktopController ↔ TimerManager (Timer ändern & abbrechen)
+
+**Ziel:** Prüfen, ob Änderungen und Abbruch eines Timers korrekt verarbeitet werden.
+
+| Punkt              | Beschreibung                                                                 |
+|--------------------|------------------------------------------------------------------------------|
+| Komponenten        | `HmiInput`, `CooktopController`, `TimerManager`, `HmiOutput`                 |
+| Vorbedingung       | Zone `BACK_LEFT` ist aktiv. Timer wurde mit `setTimer(BACK_LEFT, 10)` gesetzt. |
+| Aktion             | 1. `hmi.changeTimer(BACK_LEFT, 3)` aufrufen. 2. 2× `hmi.tickTimer()` ausführen. 3. `hmi.cancelTimer(BACK_LEFT)` aufrufen. 4. Weitere 5× `hmi.tickTimer()` ausführen. |
+| Erwartete Reaktion | 1. Restzeit im `TimerManager` wird auf 3 gesetzt und über `showTimer(...)` angezeigt. 2. Nach 2 Ticks ist Restzeit = 1. 3. Nach `cancelTimer(...)` wird der Timer gelöscht; Anzeige kann aktualisiert werden (z. B. kein Timer mehr). 4. Es tritt **kein** Ablauf-Ereignis und kein `showTimerExpired(...)`/`beep()` für `BACK_LEFT` auf. |
+| Nachbedingung      | Timer für `BACK_LEFT` ist inaktiv; keine Deaktivierung der Zone aufgrund des abgebrochenen Timers. |
+| Ergebnis           | – |
