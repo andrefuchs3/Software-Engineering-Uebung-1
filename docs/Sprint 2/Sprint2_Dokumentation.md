@@ -250,8 +250,6 @@ Im Rahmen von Sprint 2 wurden sowohl fachliche als auch prozessbezogene Erfahrun
   Durch die Kombination aus Zonenstatus, Leistungsstufen, Kindersicherung und Timern entstehen viele Zustandskombinationen.  
   Das macht es schwierig, alle Pfade im Kopf zu behalten und erhöht den Dokumentationsaufwand.
 
-- **Abhängigkeit zwischen Dokumentation und Code**  
-  Bei Änderungen am Testcode oder an der Timerlogik muss die Testfalldokumentation sehr sorgfältig nachgezogen werden, damit beide Seiten konsistent bleiben.
 
 ### 7.3 Konsequenzen für Sprint 3
 
@@ -262,7 +260,6 @@ Aus den Erfahrungen in Sprint 2 ergeben sich folgende Maßnahmen für Sprint 3:
   - Automatisierte Soll-/Ist-Vergleiche statt rein manueller Konsolenprüfung.
 
 - **Weiterführung der Traceability**  
-  - Neue oder geänderte Requirements sollen direkt mit Testfällen und Codeänderungen verknüpft werden.  
   - Die Traceability-Matrix bleibt zentrales Werkzeug, um den Überblick über die Abdeckung zu behalten.
 
 - **Bewusste Planung von Testfällen vor der Implementierung**  
